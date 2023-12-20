@@ -11,8 +11,8 @@ cat ppt4j_data.tar.xz.part* > ppt4j_data.tar.xz
 md5sum --ignore-missing --check MD5.chk
 
 mkdir -p ${HOME}/database
-echo "Extracting ppt4j_data.tar.xz to ${HOME}/database"
-tar xf ppt4j_data.tar.xz -C ${HOME}/database
+echo "Extracting ppt4j_data.tar.xz to ${HOME}"
+tar xf ppt4j_data.tar.xz -C ${HOME}
 
 echo "Cleaning up"
 cd ..

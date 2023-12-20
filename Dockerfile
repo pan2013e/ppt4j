@@ -65,8 +65,7 @@ USER ppt4j
 WORKDIR /ppt4j
 ADD . /ppt4j
 
-RUN mkdir -p ${HOME}/temp && \
-    unzip -j ${HOME}/framework/src/main/resources/dataset/db.bin \
-        -x "ser/*" "*.json" -d ${HOME}/temp
+RUN unzip -j ${HOME}/framework/src/main/resources/dataset/db.bin \
+        -x "ser/*" "*.json" -d ${HOME}/.temp > /dev/null
 
 CMD ["/bin/bash"]
