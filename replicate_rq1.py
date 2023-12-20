@@ -52,6 +52,7 @@ def fire_single_test(idx, gt_type):
                           shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     out, _ = ex.communicate()
     score = float(out.splitlines()[0].split()[-1])
+    print(f'#{idx} {gt_type} {score}')
     place(idx)[classify(gt_type, score)] += 1
 
 for idx in range(1, 117):

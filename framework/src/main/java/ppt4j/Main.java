@@ -18,6 +18,7 @@ public final class Main {
 
     private static final String VM_OPTIONS =
             "-javaagent:lib/aspectjweaver-1.9.19.jar " +
+            "-Xss2m -XX:CompilerThreadStackSize=2048 -XX:VMThreadStackSize=2048 " +
             "--add-opens java.base/java.lang=ALL-UNNAMED " +
             "--add-opens java.base/java.lang.reflect=ALL-UNNAMED";
 
