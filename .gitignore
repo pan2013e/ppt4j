@@ -1,0 +1,5 @@
+__pycache__/
+target/
+.temp/
+.vscode/
+.DS_Store

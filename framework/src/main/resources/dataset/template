@@ -1,0 +1,42 @@
+package ppt4j.database;
+
+import ppt4j.annotation.Database;
+
+@Database(value = "%s", id = %d)
+public final class %s implements Vulnerability {
+
+    public %s() {}
+
+    public String getRepoUrl() {
+        return "%s";
+    }
+
+    public String getPatchCommitHash() {
+        return "%s";
+    }
+
+    public String getDiffUrl() {
+        return "%s";
+    }
+
+    public String getJavaSrcTopLevelDir() {
+        return "%s";
+    }
+
+    public String getClassesTopLevelDir() {
+        return "%s";
+    }
+
+    public boolean shouldScanAllModules() {
+        return %s;
+    }
+
+    public String[] getThirdPartySrcDirs() {
+        return %s;
+    }
+
+    public String[] getThirdPartyLibDirs() {
+        return %s;
+    }
+
+}
