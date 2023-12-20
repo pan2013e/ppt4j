@@ -2,8 +2,6 @@ import math
 import os
 import subprocess
 
-from scripts import MAVEN_OPTS
-
 exclude = [62, 63, 67, 72, 73, 74]
 D1_RANGE = [2, 6, 7, 11, 42, 59, 60] + [i for i in range(80, 117)]
 
@@ -47,7 +45,7 @@ def f1(tp, fp, tn, fn):
     r = recall(tp, fp, tn, fn)
     return 2 * p * r / (p + r)
 
-os.system(f'MAVEN_OPTS=\"{MAVEN_OPTS}\" mvn clean install -DskipTests >/dev/null 2>&1')
+os.system('mvn clean install -DskipTests >/dev/null 2>&1')
 
 def fire_single_test(idx, gt_type):
     ex = subprocess.Popen(f'java -cp lib/*:framework/target/classes/ ppt4j.Main analyze {idx} {gt_type} | grep "Result:"',
