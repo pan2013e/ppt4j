@@ -78,10 +78,10 @@ $ # alternative: docker pull zhiyuanpan/ppt4j:complete-latest
 $ docker run --rm -it zhiyuanpan/ppt4j:minimal-latest
 ```
 
-- The docker images on Docker Hub have two tags: `minimal`(~500M) and `complete`(~22G). 
-  - The `complete` one provides out-of-the-box experience (with dataset). Commands describedin the next section can be executed without any further configuration.
-  - The `minimal` one privides a minimal running environment which satisfies software requirements (without dataset). To test the dataset in `minimal` containers, please first run `bash download.sh` in the **home directory**, and the script will start the downloading process. 
-- To test other Java binaries, you can mount custom directories in `docker run` command.
+- The docker images on Docker Hub have two tags: `minimal`(~250M download size, ~500M final usage) and `complete`(~13G download size, ~22G final usage). 
+  - The `complete` one provides an out-of-the-box experience (with dataset). Commands described in the next section can be executed without any further configuration.
+  - The `minimal` one provides a minimal running environment that satisfies software requirements (without dataset). To test the dataset in `minimal` containers, please first run `bash download.sh` in the **home directory**, and the script will start the downloading process. 
+- To test other Java binaries, you can mount custom directories in the `docker run` command.
 
 For detailed script/executable usage, please refer to the documentation below.
 
@@ -89,7 +89,7 @@ For detailed script/executable usage, please refer to the documentation below.
 
 For a quick start, you can run `python replicate_rq1.py` to get the results of RQ1 in the paper.
 
-You can also use the Python scripts inside `scripts` folder for: **dataset construction**, **project building** and **testing**.
+You can also use the Python scripts inside the `scripts` folder for: **dataset construction**, **project building** and **testing**.
 
 - In the **project root** (where `README.md` and `all.iml` are located), run `python -m scripts.<name> <args>`.
   - Available `<name>`: `build, test`
