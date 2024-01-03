@@ -73,9 +73,9 @@ Note: We provide Docker images for replication. If you use Docker, you can just 
 
 ```bash
 # Host OS
-$ docker pull zhiyuanpan/ppt4j:minimal-latest
-$ # alternative: docker pull zhiyuanpan/ppt4j:complete-latest
-$ docker run --rm -it zhiyuanpan/ppt4j:minimal-latest
+$ docker pull zhiyuanpan/ppt4j
+$ # alternative: docker pull zhiyuanpan/ppt4j:minimal-latest
+$ docker run --rm -it zhiyuanpan/ppt4j
 ```
 
 - The docker images on Docker Hub have two tags: `minimal`(~250M download size, ~500M final usage) and `complete`(~13G download size, ~22G final usage). 
@@ -89,7 +89,7 @@ For detailed script/executable usage, please refer to the documentation below.
 
 For a quick start, you can run `python replicate_rq1.py` to get the results of RQ1 in the paper.
 
-You can also use the Python scripts inside the `scripts` folder for: **dataset construction**, **project building** and **testing**.
+You can also use the Python scripts inside the `scripts` folder for: **project building** and **testing**.
 
 - In the **project root** (where `README.md` and `all.iml` are located), run `python -m scripts.<name> <args>`.
   - Available `<name>`: `build, test`
