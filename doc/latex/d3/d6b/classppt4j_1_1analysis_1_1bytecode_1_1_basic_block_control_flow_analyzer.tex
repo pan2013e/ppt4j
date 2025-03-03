@@ -1,0 +1,93 @@
+\doxysection{ppt4j.\+analysis.\+bytecode.\+Basic\+Block\+Control\+Flow\+Analyzer\texorpdfstring{$<$}{<} V extends Value \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{}\label{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}\index{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}}
+Inheritance diagram for ppt4j.\+analysis.\+bytecode.\+Basic\+Block\+Control\+Flow\+Analyzer\texorpdfstring{$<$}{<} V extends Value \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/d6b/classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a2722cb3c8e9dacd878ba04a8dfbab046}{Basic\+Block\+Control\+Flow\+Analyzer}} (Interpreter$<$ V $>$ interpreter)
+\item 
+boolean \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a9edb290342ade4a3a7c8293ddd5f5666}{is\+Delimiter}} (\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} block)
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_adea986c24442eed6c26c5baa102553a6}{get\+Original\+Blocks}} ()
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a6c0acbeadca1bd433914dcb7506df203}{get\+Blocks}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Inst\+Control\+Flow\+Analyzer$<$ V $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_a31d1a0fb837d7e2a048c4c1d696c09cb}{Inst\+Control\+Flow\+Analyzer}} (Interpreter$<$ V $>$ interpreter)
+\item 
+Frame$<$ V $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_a3d8c19d7361bc51a2f3c2fe512a805db}{analyze}} (String owner, Method\+Node method)  throws Analyzer\+Exception 
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_a2a06bf33e670c2d7ac26b0b15e12f117}{get\+Blocks}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Inst\+Control\+Flow\+Analyzer$<$ V $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+final Map$<$ Abstract\+Insn\+Node, \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_a2ea6d822a64afb1c03f523e0c74a8d8d}{node\+To\+Block\+Map}}
+\item 
+final Map$<$ Abstract\+Insn\+Node, \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_a49d0e79ba1274b9363da6c3a3cc5a950}{node\+To\+Jump\+Block\+Map}}
+\item 
+final Map$<$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}, Integer $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_a30b3ea83f4c55974a2d34b7a255ad06d}{block\+To\+Index\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Inst\+Control\+Flow\+Analyzer$<$ V $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer_ac4f248c15194225c6f945e1b9a75f277}{new\+Control\+Flow\+Edge}} (int insn\+Index, int successor\+Index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a2722cb3c8e9dacd878ba04a8dfbab046}\index{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}!BasicBlockControlFlowAnalyzer@{BasicBlockControlFlowAnalyzer}}
+\index{BasicBlockControlFlowAnalyzer@{BasicBlockControlFlowAnalyzer}!ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}}
+\doxysubsubsection{\texorpdfstring{BasicBlockControlFlowAnalyzer()}{BasicBlockControlFlowAnalyzer()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a2722cb3c8e9dacd878ba04a8dfbab046} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Basic\+Block\+Control\+Flow\+Analyzer}}$<$ V extends Value $>$.\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{Basic\+Block\+Control\+Flow\+Analyzer}} (\begin{DoxyParamCaption}\item[{Interpreter$<$ V $>$}]{interpreter}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a6c0acbeadca1bd433914dcb7506df203}\index{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}!getBlocks@{getBlocks}}
+\index{getBlocks@{getBlocks}!ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}}
+\doxysubsubsection{\texorpdfstring{getBlocks()}{getBlocks()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a6c0acbeadca1bd433914dcb7506df203} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Basic\+Block\+Control\+Flow\+Analyzer}}$<$ V extends Value $>$.get\+Blocks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves a list of instruction blocks from the superclass, processes the blocks to merge adjacent and connected blocks, and returns the modified list of instruction blocks. \Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_adea986c24442eed6c26c5baa102553a6}\index{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}!getOriginalBlocks@{getOriginalBlocks}}
+\index{getOriginalBlocks@{getOriginalBlocks}!ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}}
+\doxysubsubsection{\texorpdfstring{getOriginalBlocks()}{getOriginalBlocks()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_adea986c24442eed6c26c5baa102553a6} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Basic\+Block\+Control\+Flow\+Analyzer}}$<$ V extends Value $>$.get\+Original\+Blocks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the original instruction blocks retrieved from the superclass. These blocks are used for comparison with modified blocks later on.
+
+\begin{DoxyReturn}{Returns}
+an array of instruction blocks 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a9edb290342ade4a3a7c8293ddd5f5666}\index{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}!isDelimiter@{isDelimiter}}
+\index{isDelimiter@{isDelimiter}!ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$@{ppt4j.analysis.bytecode.BasicBlockControlFlowAnalyzer$<$ V extends Value $>$}}
+\doxysubsubsection{\texorpdfstring{isDelimiter()}{isDelimiter()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer_a9edb290342ade4a3a7c8293ddd5f5666} 
+boolean \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{ppt4j.\+analysis.\+bytecode.\+Basic\+Block\+Control\+Flow\+Analyzer}}$<$ V extends Value $>$.is\+Delimiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}}]{block}{}\end{DoxyParamCaption})}
+
+Checks if the provided \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} is a delimiter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & the \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} is a delimiter, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/bytecode/\mbox{\hyperlink{_basic_block_control_flow_analyzer_8java}{Basic\+Block\+Control\+Flow\+Analyzer.\+java}}\end{DoxyCompactItemize}

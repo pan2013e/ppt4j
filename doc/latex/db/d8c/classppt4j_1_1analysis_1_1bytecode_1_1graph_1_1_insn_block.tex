@@ -1,0 +1,88 @@
+\doxysection{ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block Class Reference}
+\hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{}\label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a1477ed1ba7d525cf74f4a1a2006d1e01}{add\+Lines}} (List$<$ String $>$ list)
+\item 
+void \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_af3b92c9d780e157345c889edf0900ed6}{add\+Next}} (\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} item)
+\item 
+void \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_adb2066822f25ee1a9ec71595c00fb0d5}{add\+Jump}} (\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} item)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final List$<$ String $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a0e403755c6e3b4cdf7dc62d6ea8b8cb5}{lines}} = new Array\+List$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a66b4298ad46005a6713fb9d2fd5f3868}{next\+Block\+List}} = new Array\+List$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}} $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_aadd8bd9f7e830f97ec0781f664c8fc6b}{jump\+Block\+List}} = new Array\+List$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_adb2066822f25ee1a9ec71595c00fb0d5}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}!addJump@{addJump}}
+\index{addJump@{addJump}!ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection{\texorpdfstring{addJump()}{addJump()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_adb2066822f25ee1a9ec71595c00fb0d5} 
+void ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block.\+add\+Jump (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}}]{item}{}\end{DoxyParamCaption})}
+
+Adds the given \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} item to the list of jump blocks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} to add to the list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a1477ed1ba7d525cf74f4a1a2006d1e01}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}!addLines@{addLines}}
+\index{addLines@{addLines}!ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection{\texorpdfstring{addLines()}{addLines()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a1477ed1ba7d525cf74f4a1a2006d1e01} 
+void ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block.\+add\+Lines (\begin{DoxyParamCaption}\item[{List$<$ String $>$}]{list}{}\end{DoxyParamCaption})}
+
+Adds a list of strings to the existing list of lines.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list of strings to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_af3b92c9d780e157345c889edf0900ed6}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}!addNext@{addNext}}
+\index{addNext@{addNext}!ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection{\texorpdfstring{addNext()}{addNext()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_af3b92c9d780e157345c889edf0900ed6} 
+void ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block.\+add\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}}]{item}{}\end{DoxyParamCaption})}
+
+Adds the given \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} item to the list of next blocks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block} to be added \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_aadd8bd9f7e830f97ec0781f664c8fc6b}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}!jumpBlockList@{jumpBlockList}}
+\index{jumpBlockList@{jumpBlockList}!ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection{\texorpdfstring{jumpBlockList}{jumpBlockList}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_aadd8bd9f7e830f97ec0781f664c8fc6b} 
+final List$<$\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}$>$ ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block.\+jump\+Block\+List = new Array\+List$<$$>$()}
+
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a0e403755c6e3b4cdf7dc62d6ea8b8cb5}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}!lines@{lines}}
+\index{lines@{lines}!ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a0e403755c6e3b4cdf7dc62d6ea8b8cb5} 
+final List$<$String$>$ ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block.\+lines = new Array\+List$<$$>$()}
+
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a66b4298ad46005a6713fb9d2fd5f3868}\index{ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}!nextBlockList@{nextBlockList}}
+\index{nextBlockList@{nextBlockList}!ppt4j.analysis.bytecode.graph.InsnBlock@{ppt4j.analysis.bytecode.graph.InsnBlock}}
+\doxysubsubsection{\texorpdfstring{nextBlockList}{nextBlockList}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block_a66b4298ad46005a6713fb9d2fd5f3868} 
+final List$<$\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_block}{Insn\+Block}}$>$ ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Block.\+next\+Block\+List = new Array\+List$<$$>$()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/bytecode/graph/\mbox{\hyperlink{_insn_block_8java}{Insn\+Block.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['id_0',['id',['../dc/dbc/interfaceppt4j_1_1annotation_1_1_database.html#a375fcfde5347c9391af2132e35ee3392',1,'ppt4j::annotation::Database']]],
+  ['init_1',['init',['../dd/dbf/classppt4j_1_1analysis_1_1java_1_1_library_constants.html#aa4a055deec1d3ea416dbb4da2518a751',1,'ppt4j.analysis.java.LibraryConstants.init()'],['../d4/d49/classppt4j_1_1util_1_1_aspect_utils.html#afab82e9c307fa5eac055e5e5ae99eaea',1,'ppt4j.util.AspectUtils.init()'],['../d1/dc6/classppt4j_1_1util_1_1_property_utils.html#abe8d38b4c624d952de92d83c63a1247e',1,'ppt4j.util.PropertyUtils.init()']]],
+  ['initvalue_2',['initValue',['../d1/dc6/classppt4j_1_1util_1_1_property_utils.html#ae2c3e78d57d0c7eb690f6c898cb8f524',1,'ppt4j::util::PropertyUtils']]],
+  ['instcontrolflowanalyzer_3',['InstControlFlowAnalyzer',['../dd/d58/classppt4j_1_1analysis_1_1bytecode_1_1_inst_control_flow_analyzer.html#a31d1a0fb837d7e2a048c4c1d696c09cb',1,'ppt4j::analysis::bytecode::InstControlFlowAnalyzer']]],
+  ['intersection_4',['intersection',['../d9/d03/classppt4j_1_1util_1_1_set_utils.html#a499f75d0e3eae12171e27a0765506461',1,'ppt4j::util::SetUtils']]],
+  ['isabstract_5',['isAbstract',['../df/d35/classppt4j_1_1util_1_1_asm_utils.html#ab7d6dd74fe1a6c88c374d46249831257',1,'ppt4j::util::AsmUtils']]],
+  ['isconstop_6',['isConstOp',['../df/d35/classppt4j_1_1util_1_1_asm_utils.html#a985a1e79ce81bb68e1d32b1007310842',1,'ppt4j::util::AsmUtils']]],
+  ['isdelimiter_7',['isDelimiter',['../d3/d6b/classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer.html#a9edb290342ade4a3a7c8293ddd5f5666',1,'ppt4j::analysis::bytecode::BasicBlockControlFlowAnalyzer']]],
+  ['isempty_8',['isEmpty',['../d6/dfc/classppt4j_1_1database_1_1_vulnerability_info.html#ab5d6dd7461f2530b66121a70ef0bfc16',1,'ppt4j.database.VulnerabilityInfo.isEmpty()'],['../db/d71/classppt4j_1_1feature_1_1_features.html#a356fb7a2cb3d3675d083759767333e93',1,'ppt4j.feature.Features.isEmpty()']]],
+  ['isjavacode_9',['isJavaCode',['../d3/dfc/classppt4j_1_1util_1_1_string_utils.html#a849a66850bb8743a7282455cc70c0988',1,'ppt4j::util::StringUtils']]],
+  ['isjavacomment_10',['isJavaComment',['../d3/dfc/classppt4j_1_1util_1_1_string_utils.html#a304568ea917f18a7e200f203c8cebf99',1,'ppt4j::util::StringUtils']]],
+  ['isliteral_11',['isLiteral',['../db/de3/classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis.html#aa64795aa5719071fe1a3c79d69f57e6a',1,'ppt4j::analysis::java::ConstPropAnalysis']]],
+  ['ismatch_12',['isMatch',['../d2/d0b/interfaceppt4j_1_1feature_1_1_feature_matcher.html#a39a32f4603a58ef5c650a37aadd5944c',1,'ppt4j::feature::FeatureMatcher']]],
+  ['ismatched_13',['isMatched',['../d9/d6a/interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher.html#a558e91381918bf24470dc47dc54f4aea',1,'ppt4j::analysis::patch::CrossMatcher']]],
+  ['isnative_14',['isNative',['../df/d35/classppt4j_1_1util_1_1_asm_utils.html#a37bdeb70f22398bc1e1e4810e0fabe27',1,'ppt4j::util::AsmUtils']]],
+  ['isprimitive_15',['isPrimitive',['../d3/dfc/classppt4j_1_1util_1_1_string_utils.html#a409a77aeae0a5ca4928f612b62d67258',1,'ppt4j::util::StringUtils']]],
+  ['ispureaddition_16',['isPureAddition',['../df/d05/classppt4j_1_1diff_1_1_block_diff.html#a4d6dc25510f5809349016845bac1a58d',1,'ppt4j::diff::BlockDiff']]],
+  ['ispuredeletion_17',['isPureDeletion',['../df/d05/classppt4j_1_1diff_1_1_block_diff.html#a6c063371980998ad0e2aa1ca70510fae',1,'ppt4j::diff::BlockDiff']]],
+  ['isreturnop_18',['isReturnOp',['../df/d35/classppt4j_1_1util_1_1_asm_utils.html#a9f67bb483f4c9fcf3f65d4e457c676af',1,'ppt4j::util::AsmUtils']]],
+  ['isshiftop_19',['isShiftOp',['../df/d35/classppt4j_1_1util_1_1_asm_utils.html#a6029a1e41cabb8e014ef856c0d52a37f',1,'ppt4j::util::AsmUtils']]],
+  ['isvalidline_20',['isValidLine',['../df/d32/classppt4j_1_1feature_1_1java_1_1_java_extractor.html#aa0985236ca2d9c43181a93b2087bc640',1,'ppt4j::feature::java::JavaExtractor']]]
+];

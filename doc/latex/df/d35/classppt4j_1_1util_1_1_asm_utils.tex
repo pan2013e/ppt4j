@@ -1,0 +1,188 @@
+\doxysection{ppt4j.\+util.\+Asm\+Utils Class Reference}
+\hypertarget{classppt4j_1_1util_1_1_asm_utils}{}\label{classppt4j_1_1util_1_1_asm_utils}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_a8c90ccaf05874b580013175f9127c837}{has\+Line\+Number\+Info}} (Method\+Node m)
+\item 
+static boolean \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_a9f67bb483f4c9fcf3f65d4e457c676af}{is\+Return\+Op}} (int opcode)
+\item 
+static boolean \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_a985a1e79ce81bb68e1d32b1007310842}{is\+Const\+Op}} (int opcode)
+\item 
+static Object \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_af953acc099458334a4ab5b5be5275e1c}{get\+Const}} (int opcode)
+\item 
+static String \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_ac976f9421daed974a001c6efb1acc209}{get\+Array\+Type}} (int operand)
+\item 
+static boolean \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_a37bdeb70f22398bc1e1e4810e0fabe27}{is\+Native}} (int access)
+\item 
+static boolean \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_ab7d6dd74fe1a6c88c374d46249831257}{is\+Abstract}} (int access)
+\item 
+static boolean \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_a6029a1e41cabb8e014ef856c0d52a37f}{is\+Shift\+Op}} (int opcode)
+\item 
+static Features.\+Inst\+Type \mbox{\hyperlink{classppt4j_1_1util_1_1_asm_utils_a889dadb72ede999e5a209cd2f2b3fd68}{get\+Shift\+Type}} (int opcode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_ac976f9421daed974a001c6efb1acc209}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!getArrayType@{getArrayType}}
+\index{getArrayType@{getArrayType}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{getArrayType()}{getArrayType()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_ac976f9421daed974a001c6efb1acc209} 
+static String ppt4j.\+util.\+Asm\+Utils.\+get\+Array\+Type (\begin{DoxyParamCaption}\item[{int}]{operand}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the string representation of an array type based on the given operand.
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand} & the operand representing the array type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string representation of the array type 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the operand does not represent an array type \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_af953acc099458334a4ab5b5be5275e1c}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!getConst@{getConst}}
+\index{getConst@{getConst}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{getConst()}{getConst()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_af953acc099458334a4ab5b5be5275e1c} 
+static Object ppt4j.\+util.\+Asm\+Utils.\+get\+Const (\begin{DoxyParamCaption}\item[{int}]{opcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the constant value associated with the given opcode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & the opcode value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the constant value based on the opcode 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the opcode does not correspond to a known constant \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_a889dadb72ede999e5a209cd2f2b3fd68}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!getShiftType@{getShiftType}}
+\index{getShiftType@{getShiftType}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{getShiftType()}{getShiftType()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_a889dadb72ede999e5a209cd2f2b3fd68} 
+static Features.\+Inst\+Type ppt4j.\+util.\+Asm\+Utils.\+get\+Shift\+Type (\begin{DoxyParamCaption}\item[{int}]{opcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method takes an opcode as input and returns the corresponding shift type from the \doxylink{enumppt4j_1_1feature_1_1_features_1_1_inst_type}{Features.\+Inst\+Type} enum.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & the opcode representing the type of shift operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the shift type corresponding to the given opcode 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the opcode is not a valid shift opcode \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_a8c90ccaf05874b580013175f9127c837}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!hasLineNumberInfo@{hasLineNumberInfo}}
+\index{hasLineNumberInfo@{hasLineNumberInfo}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{hasLineNumberInfo()}{hasLineNumberInfo()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_a8c90ccaf05874b580013175f9127c837} 
+static boolean ppt4j.\+util.\+Asm\+Utils.\+has\+Line\+Number\+Info (\begin{DoxyParamCaption}\item[{Method\+Node}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the given Method\+Node contains any Line\+Number\+Node instructions, which provide information about the source code line numbers associated with the instructions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the Method\+Node to check for Line\+Number\+Node instructions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the Method\+Node contains at least one Line\+Number\+Node instruction, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_ab7d6dd74fe1a6c88c374d46249831257}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!isAbstract@{isAbstract}}
+\index{isAbstract@{isAbstract}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{isAbstract()}{isAbstract()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_ab7d6dd74fe1a6c88c374d46249831257} 
+static boolean ppt4j.\+util.\+Asm\+Utils.\+is\+Abstract (\begin{DoxyParamCaption}\item[{int}]{access}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the provided access modifier integer represents an abstract type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em access} & the access modifier integer to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the access modifier represents an abstract type, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_a985a1e79ce81bb68e1d32b1007310842}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!isConstOp@{isConstOp}}
+\index{isConstOp@{isConstOp}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{isConstOp()}{isConstOp()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_a985a1e79ce81bb68e1d32b1007310842} 
+static boolean ppt4j.\+util.\+Asm\+Utils.\+is\+Const\+Op (\begin{DoxyParamCaption}\item[{int}]{opcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the given opcode represents a constant operation in bytecode instructions. Constant operations include loading the constants 0, 1, 2, 3, 4, 5, -\/1 for integers, 0, 1 for longs, 0, 1, 2 for floats, and 0, 1 for doubles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & the opcode value to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the opcode represents a constant operation, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_a37bdeb70f22398bc1e1e4810e0fabe27}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!isNative@{isNative}}
+\index{isNative@{isNative}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{isNative()}{isNative()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_a37bdeb70f22398bc1e1e4810e0fabe27} 
+static boolean ppt4j.\+util.\+Asm\+Utils.\+is\+Native (\begin{DoxyParamCaption}\item[{int}]{access}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method checks if the given access flags include the ACC\+\_\+\+NATIVE flag, which indicates that a method is native. 
+\begin{DoxyParams}{Parameters}
+{\em access} & the access flags to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the ACC\+\_\+\+NATIVE flag is present in the access flags, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_a9f67bb483f4c9fcf3f65d4e457c676af}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!isReturnOp@{isReturnOp}}
+\index{isReturnOp@{isReturnOp}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{isReturnOp()}{isReturnOp()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_a9f67bb483f4c9fcf3f65d4e457c676af} 
+static boolean ppt4j.\+util.\+Asm\+Utils.\+is\+Return\+Op (\begin{DoxyParamCaption}\item[{int}]{opcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the given opcode corresponds to a return instruction in bytecode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & the opcode to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the opcode is a return instruction, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_asm_utils_a6029a1e41cabb8e014ef856c0d52a37f}\index{ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}!isShiftOp@{isShiftOp}}
+\index{isShiftOp@{isShiftOp}!ppt4j.util.AsmUtils@{ppt4j.util.AsmUtils}}
+\doxysubsubsection{\texorpdfstring{isShiftOp()}{isShiftOp()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_asm_utils_a6029a1e41cabb8e014ef856c0d52a37f} 
+static boolean ppt4j.\+util.\+Asm\+Utils.\+is\+Shift\+Op (\begin{DoxyParamCaption}\item[{int}]{opcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the given opcode represents a shift operation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & the opcode to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the opcode is a shift operation, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_asm_utils_8java}{Asm\+Utils.\+java}}\end{DoxyCompactItemize}

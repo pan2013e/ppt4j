@@ -1,0 +1,107 @@
+\doxysection{ppt4j.\+feature.\+Feature\+Matcher Interface Reference}
+\hypertarget{interfaceppt4j_1_1feature_1_1_feature_matcher}{}\label{interfaceppt4j_1_1feature_1_1_feature_matcher}\index{ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher_a6e92b2cac1b3e68351447ffb173d70be}{get\+Algorithm}} ()
+\item 
+double \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher_a3f8b08c31fd440f957c2438146a32ae5}{match}} (\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} f1, \mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} f2)
+\item 
+default boolean \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher_a39a32f4603a58ef5c650a37aadd5944c}{is\+Match}} (\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} f1, \mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} f2, double threshold)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher}} \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher_a011bd84dfd90c1f602104109b41ded14}{get}} (String algorithm)
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher}} \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher_a5bc8a3e2af580b8a148391265ecb05cb}{get}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_feature_matcher_a5bc8a3e2af580b8a148391265ecb05cb}\index{ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}!get@{get}}
+\index{get@{get}!ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_feature_matcher_a5bc8a3e2af580b8a148391265ecb05cb} 
+static \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher}} ppt4j.\+feature.\+Feature\+Matcher.\+get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method returns a \doxylink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher} object with the default similarity measure set to "{}jaccard"{}.
+
+\begin{DoxyReturn}{Returns}
+a \doxylink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher} object with the default similarity measure set to "{}jaccard"{} 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_feature_matcher_a011bd84dfd90c1f602104109b41ded14}\index{ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}!get@{get}}
+\index{get@{get}!ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_feature_matcher_a011bd84dfd90c1f602104109b41ded14} 
+static \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher}} ppt4j.\+feature.\+Feature\+Matcher.\+get (\begin{DoxyParamCaption}\item[{String}]{algorithm}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a \doxylink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher} based on the input algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & the algorithm to determine which \doxylink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher} to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \doxylink{interfaceppt4j_1_1feature_1_1_feature_matcher}{Feature\+Matcher} based on the specified algorithm 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the algorithm is unknown \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_feature_matcher_a6e92b2cac1b3e68351447ffb173d70be}\index{ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}!getAlgorithm@{getAlgorithm}}
+\index{getAlgorithm@{getAlgorithm}!ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{getAlgorithm()}{getAlgorithm()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_feature_matcher_a6e92b2cac1b3e68351447ffb173d70be} 
+String ppt4j.\+feature.\+Feature\+Matcher.\+get\+Algorithm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the algorithm used by the object.
+
+\begin{DoxyReturn}{Returns}
+the algorithm used by the object 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_feature_matcher_a39a32f4603a58ef5c650a37aadd5944c}\index{ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}!isMatch@{isMatch}}
+\index{isMatch@{isMatch}!ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{isMatch()}{isMatch()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_feature_matcher_a39a32f4603a58ef5c650a37aadd5944c} 
+default boolean ppt4j.\+feature.\+Feature\+Matcher.\+is\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}}}]{f1}{, }\item[{\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}}}]{f2}{, }\item[{double}]{threshold}{}\end{DoxyParamCaption})}
+
+Checks if the similarity score between two \doxylink{classppt4j_1_1feature_1_1_features}{Features} objects is greater than or equal to a specified threshold.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f1} & the first \doxylink{classppt4j_1_1feature_1_1_features}{Features} object to compare \\
+\hline
+{\em f2} & the second \doxylink{classppt4j_1_1feature_1_1_features}{Features} object to compare \\
+\hline
+{\em threshold} & the threshold value for the match to be considered successful \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the similarity score is greater than or equal to the threshold, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_feature_matcher_a3f8b08c31fd440f957c2438146a32ae5}\index{ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}!match@{match}}
+\index{match@{match}!ppt4j.feature.FeatureMatcher@{ppt4j.feature.FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_feature_matcher_a3f8b08c31fd440f957c2438146a32ae5} 
+double ppt4j.\+feature.\+Feature\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}}}]{f1}{, }\item[{\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}}}]{f2}{}\end{DoxyParamCaption})}
+
+Calculates the similarity between two feature sets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f1} & the first set of features \\
+\hline
+{\em f2} & the second set of features \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double value representing the similarity between f1 and f2 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/feature/\mbox{\hyperlink{_feature_matcher_8java}{Feature\+Matcher.\+java}}\end{DoxyCompactItemize}

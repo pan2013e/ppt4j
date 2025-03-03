@@ -1,0 +1,74 @@
+\doxysection{ppt4j.\+database.\+Database\+Type Enum Reference}
+\hypertarget{enumppt4j_1_1database_1_1_database_type}{}\label{enumppt4j_1_1database_1_1_database_type}\index{ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type_a1db4351d13805f5070b1460fa7d66744}{get\+Path}} ()
+\item 
+String \mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type_a1fd1c8dd982c2289c88db3ca643c016b}{get\+Path}} (int id)
+\item 
+String \mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type_a7c25d924155f5eaeaa435934921ea616}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type_a4b9c9c483e10995d51d3fc77804430cc}{PREPATCH}}
+\item 
+\mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type_a81d885cb982d557491b9355b48a0a26f}{POSTPATCH}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{enumppt4j_1_1database_1_1_database_type_a1db4351d13805f5070b1460fa7d66744}\index{ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}!getPath@{getPath}}
+\index{getPath@{getPath}!ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{enumppt4j_1_1database_1_1_database_type_a1db4351d13805f5070b1460fa7d66744} 
+String ppt4j.\+database.\+Database\+Type.\+get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the full path to the directory where database files are stored, based on whether the current instance is a PREPATCH or POSTPATCH. If the current instance is PREPATCH, the subdirectory will be the PREPATCH directory. If the current instance is POSTPATCH, the subdirectory will be the POSTPATCH directory. The full path is resolved using the DATABASE\+\_\+\+ROOT as the parent directory, and the subdirectory is concatenated to it.
+
+\begin{DoxyReturn}{Returns}
+the full path to the database directory 
+\end{DoxyReturn}
+\Hypertarget{enumppt4j_1_1database_1_1_database_type_a1fd1c8dd982c2289c88db3ca643c016b}\index{ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}!getPath@{getPath}}
+\index{getPath@{getPath}!ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{enumppt4j_1_1database_1_1_database_type_a1fd1c8dd982c2289c88db3ca643c016b} 
+String ppt4j.\+database.\+Database\+Type.\+get\+Path (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+Constructs a path by concatenating the current path with the provided ID as a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID to append to the current path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the complete path as a string 
+\end{DoxyReturn}
+\Hypertarget{enumppt4j_1_1database_1_1_database_type_a7c25d924155f5eaeaa435934921ea616}\index{ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}!toString@{toString}}
+\index{toString@{toString}!ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{enumppt4j_1_1database_1_1_database_type_a7c25d924155f5eaeaa435934921ea616} 
+String ppt4j.\+database.\+Database\+Type.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a string representation of the object. If the object is equal to PREPATCH constant, returns "{}prepatch"{}, otherwise returns "{}postpatch"{}. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{enumppt4j_1_1database_1_1_database_type_a81d885cb982d557491b9355b48a0a26f}\index{ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}!POSTPATCH@{POSTPATCH}}
+\index{POSTPATCH@{POSTPATCH}!ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}}
+\doxysubsubsection{\texorpdfstring{POSTPATCH}{POSTPATCH}}
+{\footnotesize\ttfamily \label{enumppt4j_1_1database_1_1_database_type_a81d885cb982d557491b9355b48a0a26f} 
+ppt4j.\+database.\+Database\+Type.\+POSTPATCH}
+
+\Hypertarget{enumppt4j_1_1database_1_1_database_type_a4b9c9c483e10995d51d3fc77804430cc}\index{ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}!PREPATCH@{PREPATCH}}
+\index{PREPATCH@{PREPATCH}!ppt4j.database.DatabaseType@{ppt4j.database.DatabaseType}}
+\doxysubsubsection{\texorpdfstring{PREPATCH}{PREPATCH}}
+{\footnotesize\ttfamily \label{enumppt4j_1_1database_1_1_database_type_a4b9c9c483e10995d51d3fc77804430cc} 
+ppt4j.\+database.\+Database\+Type.\+PREPATCH}
+
+
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/database/\mbox{\hyperlink{_database_type_8java}{Database\+Type.\+java}}\end{DoxyCompactItemize}

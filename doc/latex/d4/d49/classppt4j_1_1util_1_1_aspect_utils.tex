@@ -1,0 +1,128 @@
+\doxysection{ppt4j.\+util.\+Aspect\+Utils Class Reference}
+\hypertarget{classppt4j_1_1util_1_1_aspect_utils}{}\label{classppt4j_1_1util_1_1_aspect_utils}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_afab82e9c307fa5eac055e5e5ae99eaea}{init}} ()
+\item 
+void \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_a4c1e557df5babd644bb27e5d19b002c2}{check\+Class\+Path}} (String prepatch\+Path, String postpatch\+Path, String class\+Path)
+\item 
+Object \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_afd041da491f7b95c06fe87601996e576}{log\+Time}} (Proceeding\+Join\+Point point)  throws Throwable 
+\item 
+Object \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_ae45266ce9372b234a176612a042f3e27}{log\+Download}} (Proceeding\+Join\+Point point)  throws Throwable 
+\item 
+void \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_abb5cf8a370185b57c2f90bdc75b8253f}{print\+Analysis}} (boolean result)
+\item 
+void \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_a3fc9e92d75a92d72dd5175515a054139}{post\+Property\+Init}} ()
+\item 
+void \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_a63c4923b5fcadf6fec708dbe8156f9e0}{prompt\+Fork}} (String cmd)
+\item 
+void \mbox{\hyperlink{classppt4j_1_1util_1_1_aspect_utils_acc32074a592fe93a350f86b91532c274}{print\+Return\+Value}} (int ret)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1util_1_1_aspect_utils_a4c1e557df5babd644bb27e5d19b002c2}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!checkClassPath@{checkClassPath}}
+\index{checkClassPath@{checkClassPath}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{checkClassPath()}{checkClassPath()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_a4c1e557df5babd644bb27e5d19b002c2} 
+void ppt4j.\+util.\+Aspect\+Utils.\+check\+Class\+Path (\begin{DoxyParamCaption}\item[{String}]{prepatch\+Path}{, }\item[{String}]{postpatch\+Path}{, }\item[{String}]{class\+Path}{}\end{DoxyParamCaption})}
+
+This method is a before advice that intercepts calls to the get method of \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory} class, specifically when the arguments passed are prepatch\+Path, postpatch\+Path, and class\+Path. It checks if the specified class\+Path is present in the current Virtual Machine\textquotesingle{}s class path by calling the \doxylink{classppt4j_1_1util_1_1_v_m_utils_a6202d0719e4310e20010d106973d1cc5}{VMUtils.\+check\+VMClass\+Path\+Present} method. \Hypertarget{classppt4j_1_1util_1_1_aspect_utils_afab82e9c307fa5eac055e5e5ae99eaea}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!init@{init}}
+\index{init@{init}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_afab82e9c307fa5eac055e5e5ae99eaea} 
+void ppt4j.\+util.\+Aspect\+Utils.\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method is executed before any method with a signature of {\ttfamily void main(\+String\mbox{[}$\,$\mbox{]})}. It initializes properties by loading properties from a resource file and initializing them. \Hypertarget{classppt4j_1_1util_1_1_aspect_utils_ae45266ce9372b234a176612a042f3e27}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!logDownload@{logDownload}}
+\index{logDownload@{logDownload}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{logDownload()}{logDownload()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_ae45266ce9372b234a176612a042f3e27} 
+Object ppt4j.\+util.\+Aspect\+Utils.\+log\+Download (\begin{DoxyParamCaption}\item[{Proceeding\+Join\+Point}]{point}{}\end{DoxyParamCaption}) throws Throwable}
+
+A logging advice method that intercepts the execution of the download method in Diff\+Parser class. It measures the time taken to download a file, calculates the file size in KB, and the average download speed in KB/s.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the Proceeding\+Join\+Point object representing the joinpoint at which this advice is being applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte array result of the download method 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throwable} & if an error occurs during the method execution \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_aspect_utils_afd041da491f7b95c06fe87601996e576}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!logTime@{logTime}}
+\index{logTime@{logTime}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{logTime()}{logTime()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_afd041da491f7b95c06fe87601996e576} 
+Object ppt4j.\+util.\+Aspect\+Utils.\+log\+Time (\begin{DoxyParamCaption}\item[{Proceeding\+Join\+Point}]{point}{}\end{DoxyParamCaption}) throws Throwable}
+
+This method is an aspect that intercepts method calls annotated with @\+Method\+Profiler and logs the time taken for the method to execute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the Proceeding\+Join\+Point representing the method being intercepted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of the intercepted method 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throwable} & if an error occurs during method execution \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_aspect_utils_a3fc9e92d75a92d72dd5175515a054139}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!postPropertyInit@{postPropertyInit}}
+\index{postPropertyInit@{postPropertyInit}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{postPropertyInit()}{postPropertyInit()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_a3fc9e92d75a92d72dd5175515a054139} 
+void ppt4j.\+util.\+Aspect\+Utils.\+post\+Property\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method is an advice that runs after the execution of the init method in \doxylink{classppt4j_1_1util_1_1_property_utils}{Property\+Utils} class. It calls the init method of \doxylink{classppt4j_1_1analysis_1_1java_1_1_library_constants}{Library\+Constants} class. \Hypertarget{classppt4j_1_1util_1_1_aspect_utils_abb5cf8a370185b57c2f90bdc75b8253f}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!printAnalysis@{printAnalysis}}
+\index{printAnalysis@{printAnalysis}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{printAnalysis()}{printAnalysis()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_abb5cf8a370185b57c2f90bdc75b8253f} 
+void ppt4j.\+util.\+Aspect\+Utils.\+print\+Analysis (\begin{DoxyParamCaption}\item[{boolean}]{result}{}\end{DoxyParamCaption})}
+
+This method is executed after the "{}analyze"{} method of \doxylink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer} class is called. It logs the result of the analysis, indicating whether a patch is present or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & the boolean result of the analysis indicating if a patch is present or not \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1util_1_1_aspect_utils_acc32074a592fe93a350f86b91532c274}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!printReturnValue@{printReturnValue}}
+\index{printReturnValue@{printReturnValue}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{printReturnValue()}{printReturnValue()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_acc32074a592fe93a350f86b91532c274} 
+void ppt4j.\+util.\+Aspect\+Utils.\+print\+Return\+Value (\begin{DoxyParamCaption}\item[{int}]{ret}{}\end{DoxyParamCaption})}
+
+This method is executed after a method join() in \doxylink{interfaceppt4j_1_1util_1_1_exec_driver}{Exec\+Driver} class is successfully executed. It logs the return value of the join() method along with a message indicating that the forked process exited.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ret} & The return value of the join() method \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1util_1_1_aspect_utils_a63c4923b5fcadf6fec708dbe8156f9e0}\index{ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}!promptFork@{promptFork}}
+\index{promptFork@{promptFork}!ppt4j.util.AspectUtils@{ppt4j.util.AspectUtils}}
+\doxysubsubsection{\texorpdfstring{promptFork()}{promptFork()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_aspect_utils_a63c4923b5fcadf6fec708dbe8156f9e0} 
+void ppt4j.\+util.\+Aspect\+Utils.\+prompt\+Fork (\begin{DoxyParamCaption}\item[{String}]{cmd}{}\end{DoxyParamCaption})}
+
+Forks a process to execute the specified command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & the command to be executed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_aspect_utils_8java}{Aspect\+Utils.\+java}}\end{DoxyCompactItemize}

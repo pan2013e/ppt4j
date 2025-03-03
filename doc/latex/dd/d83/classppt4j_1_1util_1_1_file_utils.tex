@@ -1,0 +1,99 @@
+\doxysection{ppt4j.\+util.\+File\+Utils Class Reference}
+\hypertarget{classppt4j_1_1util_1_1_file_utils}{}\label{classppt4j_1_1util_1_1_file_utils}\index{ppt4j.util.FileUtils@{ppt4j.util.FileUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1util_1_1_file_utils_a66482030d430467690fd93098e0cd1b8}{make\+Local\+Directory}} (String path)
+\item 
+static$<$ T $>$ void \mbox{\hyperlink{classppt4j_1_1util_1_1_file_utils_a5511badec1aa32d54469687f0d01d897}{serialize\+Object}} (T object, String path)
+\item 
+static$<$ T $>$ T \mbox{\hyperlink{classppt4j_1_1util_1_1_file_utils_aacd00651d9d6935fba7e6175516371b1}{deserialize\+Object}} (Class$<$ T $>$ clazz, String path)
+\item 
+static$<$ T $>$ T \mbox{\hyperlink{classppt4j_1_1util_1_1_file_utils_a1fb875b2c229fb04fec77baafa347fe3}{deserialize\+Object}} (Class$<$ T $>$ clazz, Input\+Stream is)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1util_1_1_file_utils_a1fb875b2c229fb04fec77baafa347fe3}\index{ppt4j.util.FileUtils@{ppt4j.util.FileUtils}!deserializeObject@{deserializeObject}}
+\index{deserializeObject@{deserializeObject}!ppt4j.util.FileUtils@{ppt4j.util.FileUtils}}
+\doxysubsubsection{\texorpdfstring{deserializeObject()}{deserializeObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_file_utils_a1fb875b2c229fb04fec77baafa347fe3} 
+static$<$ T $>$ T ppt4j.\+util.\+File\+Utils.\+deserialize\+Object (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{clazz}{, }\item[{Input\+Stream}]{is}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Deserializes an object of the specified class from the provided input stream using a Proxy\+OIS object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & the class of the object to be deserialized \\
+\hline
+{\em is} & the input stream containing the serialized object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the deserialized object of the specified class 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+State\+Exception} & if an IOException or Class\+Not\+Found\+Exception occurs during deserialization \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_file_utils_aacd00651d9d6935fba7e6175516371b1}\index{ppt4j.util.FileUtils@{ppt4j.util.FileUtils}!deserializeObject@{deserializeObject}}
+\index{deserializeObject@{deserializeObject}!ppt4j.util.FileUtils@{ppt4j.util.FileUtils}}
+\doxysubsubsection{\texorpdfstring{deserializeObject()}{deserializeObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_file_utils_aacd00651d9d6935fba7e6175516371b1} 
+static$<$ T $>$ T ppt4j.\+util.\+File\+Utils.\+deserialize\+Object (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{clazz}{, }\item[{String}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Deserializes an object of the specified class type from the given file path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & the type of the object being deserialized \\
+\hline
+{\em clazz} & the class type of the object being deserialized \\
+\hline
+{\em path} & the file path from which the object will be deserialized \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the deserialized object of the specified class type 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+State\+Exception} & if an error occurs during deserialization \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_file_utils_a66482030d430467690fd93098e0cd1b8}\index{ppt4j.util.FileUtils@{ppt4j.util.FileUtils}!makeLocalDirectory@{makeLocalDirectory}}
+\index{makeLocalDirectory@{makeLocalDirectory}!ppt4j.util.FileUtils@{ppt4j.util.FileUtils}}
+\doxysubsubsection{\texorpdfstring{makeLocalDirectory()}{makeLocalDirectory()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_file_utils_a66482030d430467690fd93098e0cd1b8} 
+static void ppt4j.\+util.\+File\+Utils.\+make\+Local\+Directory (\begin{DoxyParamCaption}\item[{String}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a local directory at the specified path if it does not already exist. If a file exists with the same name as the directory, an error is logged and an Illegal\+State\+Exception is thrown. If the directory creation fails, an error is logged and an Illegal\+State\+Exception is thrown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path where the directory should be created \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1util_1_1_file_utils_a5511badec1aa32d54469687f0d01d897}\index{ppt4j.util.FileUtils@{ppt4j.util.FileUtils}!serializeObject@{serializeObject}}
+\index{serializeObject@{serializeObject}!ppt4j.util.FileUtils@{ppt4j.util.FileUtils}}
+\doxysubsubsection{\texorpdfstring{serializeObject()}{serializeObject()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_file_utils_a5511badec1aa32d54469687f0d01d897} 
+static$<$ T $>$ void ppt4j.\+util.\+File\+Utils.\+serialize\+Object (\begin{DoxyParamCaption}\item[{T}]{object}{, }\item[{String}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Serializes an object to a specified file path using Object\+Output\+Stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to serialize \\
+\hline
+{\em path} & the file path to save the serialized object \\
+\hline
+{\em $<$\+T$>$} & the type of the object being serialized \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_file_utils_8java}{File\+Utils.\+java}}\end{DoxyCompactItemize}

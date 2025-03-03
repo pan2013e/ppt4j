@@ -1,0 +1,141 @@
+\doxysection{ppt4j.\+analysis.\+patch.\+Cross\+Matcher Interface Reference}
+\hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{}\label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumppt4j_1_1feature_1_1_features_1_1_source_type}{Source\+Type}} \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a788238016ede4c26b43d2fd49131776a}{get\+Key\+Type}} ()
+\item 
+\mbox{\hyperlink{enumppt4j_1_1feature_1_1_features_1_1_source_type}{Source\+Type}} \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a6eead5a17476d42c2e1d0520bb60daf3}{get\+Value\+Type}} ()
+\item 
+boolean \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a558e91381918bf24470dc47dc54f4aea}{is\+Matched}} (int index)
+\item 
+double \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a15800520e6e21e34e799d5fa10b4922b}{get\+Score}} (int index)
+\item 
+Pair$<$ Integer, Integer $>$ \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a23580c47a6b7cea550c4f667665164f3}{get\+Matched\+Range}} (int index)
+\item 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a67bf6d2f45ce51acc232f4970175dcc1}{query}} (int index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher}} \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_af22eb2a076a2199eae435585dd51c1c5}{get}} (\mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor}} k, \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor}{Extractor}} v, boolean diff\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_af22eb2a076a2199eae435585dd51c1c5}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!get@{get}}
+\index{get@{get}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_af22eb2a076a2199eae435585dd51c1c5} 
+static \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher}} ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor}}}]{k}{, }\item[{\mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor}{Extractor}}}]{v}{, }\item[{boolean}]{diff\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} based on the \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} and \doxylink{interfaceppt4j_1_1feature_1_1_extractor}{Extractor} provided, with the option to specify whether to consider different types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & the \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} to use \\
+\hline
+{\em v} & the \doxylink{interfaceppt4j_1_1feature_1_1_extractor}{Extractor} to use \\
+\hline
+{\em diff\+Type} & a boolean indicating whether to consider different types \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} based on the \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} and \doxylink{interfaceppt4j_1_1feature_1_1_extractor}{Extractor} provided 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the source type of \doxylink{interfaceppt4j_1_1feature_1_1_extractor}{Extractor} v is not \doxylink{enumppt4j_1_1feature_1_1_features_1_1_source_type_ad444826949653e1b13e05d87da55bae6}{Source\+Type.\+BYTECODE} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a788238016ede4c26b43d2fd49131776a}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!getKeyType@{getKeyType}}
+\index{getKeyType@{getKeyType}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{getKeyType()}{getKeyType()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a788238016ede4c26b43d2fd49131776a} 
+\mbox{\hyperlink{enumppt4j_1_1feature_1_1_features_1_1_source_type}{Source\+Type}} ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+get\+Key\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the type of key used in the data source.
+
+\begin{DoxyReturn}{Returns}
+the type of key 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a23580c47a6b7cea550c4f667665164f3}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!getMatchedRange@{getMatchedRange}}
+\index{getMatchedRange@{getMatchedRange}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{getMatchedRange()}{getMatchedRange()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a23580c47a6b7cea550c4f667665164f3} 
+Pair$<$ Integer, Integer $>$ ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+get\+Matched\+Range (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+This method returns a Pair containing the starting and ending index of a matched range based on the given index in a data structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to search for a matched range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Pair containing the starting and ending index of the matched range 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a15800520e6e21e34e799d5fa10b4922b}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!getScore@{getScore}}
+\index{getScore@{getScore}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a15800520e6e21e34e799d5fa10b4922b} 
+double ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+get\+Score (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+This method retrieves the score at the specified index in the list of scores.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the score to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the score at the specified index 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a6eead5a17476d42c2e1d0520bb60daf3}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!getValueType@{getValueType}}
+\index{getValueType@{getValueType}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{getValueType()}{getValueType()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a6eead5a17476d42c2e1d0520bb60daf3} 
+\mbox{\hyperlink{enumppt4j_1_1feature_1_1_features_1_1_source_type}{Source\+Type}} ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+get\+Value\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the source type of the value. This method is responsible for retrieving the source type of the value.
+
+\begin{DoxyReturn}{Returns}
+the source type of the value 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a558e91381918bf24470dc47dc54f4aea}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!isMatched@{isMatched}}
+\index{isMatched@{isMatched}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{isMatched()}{isMatched()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a558e91381918bf24470dc47dc54f4aea} 
+boolean ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+is\+Matched (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Checks if the given index is matched with a specific condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the index is matched, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a67bf6d2f45ce51acc232f4970175dcc1}\index{ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}!query@{query}}
+\index{query@{query}!ppt4j.analysis.patch.CrossMatcher@{ppt4j.analysis.patch.CrossMatcher}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher_a67bf6d2f45ce51acc232f4970175dcc1} 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} ppt4j.\+analysis.\+patch.\+Cross\+Matcher.\+query (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Retrieves the features at the specified index in the query results.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the features to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the features at the specified index 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/patch/\mbox{\hyperlink{_cross_matcher_8java}{Cross\+Matcher.\+java}}\end{DoxyCompactItemize}

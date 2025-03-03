@@ -1,0 +1,76 @@
+\doxysection{ppt4j.\+analysis.\+java.\+Library\+Constants Class Reference}
+\hypertarget{classppt4j_1_1analysis_1_1java_1_1_library_constants}{}\label{classppt4j_1_1analysis_1_1java_1_1_library_constants}\index{ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_library_constants_aa4a055deec1d3ea416dbb4da2518a751}{init}} ()
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_library_constants_a9309384980d5e26dd204fe792544242e}{put}} (String key, Object value)
+\item 
+static Object \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_library_constants_a23fea1f7bb30537aebbfd00e0898beb9}{get}} (Ct\+Class$<$?$>$ clazz, String key)
+\item 
+static Object \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_library_constants_a4a14321791b4e52fc17f6cf8fb5164f1}{get}} (String key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_library_constants_a23fea1f7bb30537aebbfd00e0898beb9}\index{ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}!get@{get}}
+\index{get@{get}!ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_library_constants_a23fea1f7bb30537aebbfd00e0898beb9} 
+static Object ppt4j.\+analysis.\+java.\+Library\+Constants.\+get (\begin{DoxyParamCaption}\item[{Ct\+Class$<$?$>$}]{clazz}{, }\item[{String}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves an object associated with the provided key from a cache. If the provided class is not already cached, it adds the class to the cache and returns the object associated with the key. If the class is already cached, it directly returns the object associated with the key from the cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & the class to retrieve the object for \\
+\hline
+{\em key} & the key associated with the object in the cache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object associated with the key from the cache 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_library_constants_a4a14321791b4e52fc17f6cf8fb5164f1}\index{ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}!get@{get}}
+\index{get@{get}!ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_library_constants_a4a14321791b4e52fc17f6cf8fb5164f1} 
+static Object ppt4j.\+analysis.\+java.\+Library\+Constants.\+get (\begin{DoxyParamCaption}\item[{String}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves the value associated with the specified key from the map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose associated value is to be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value to which the specified key is mapped, or null if the map contains no mapping for the key 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_library_constants_aa4a055deec1d3ea416dbb4da2518a751}\index{ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}!init@{init}}
+\index{init@{init}!ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_library_constants_aa4a055deec1d3ea416dbb4da2518a751} 
+static void ppt4j.\+analysis.\+java.\+Library\+Constants.\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initializes the \doxylink{classppt4j_1_1util_1_1_property_utils}{Property\+Utils} class by putting all classes in the \textquotesingle{}classes\textquotesingle{} array into the \doxylink{classppt4j_1_1analysis_1_1java_1_1_library_constants}{Library\+Constants} map. If the \textquotesingle{}classes\textquotesingle{} array is null, a Runtime\+Exception is thrown indicating that \doxylink{classppt4j_1_1util_1_1_property_utils}{Property\+Utils} was not initialized correctly. \Hypertarget{classppt4j_1_1analysis_1_1java_1_1_library_constants_a9309384980d5e26dd204fe792544242e}\index{ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}!put@{put}}
+\index{put@{put}!ppt4j.analysis.java.LibraryConstants@{ppt4j.analysis.java.LibraryConstants}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_library_constants_a9309384980d5e26dd204fe792544242e} 
+static void ppt4j.\+analysis.\+java.\+Library\+Constants.\+put (\begin{DoxyParamCaption}\item[{String}]{key}{, }\item[{Object}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds the specified key-\/value pair to the map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key to be added to the map \\
+\hline
+{\em value} & the value associated with the key \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/java/\mbox{\hyperlink{_library_constants_8java}{Library\+Constants.\+java}}\end{DoxyCompactItemize}

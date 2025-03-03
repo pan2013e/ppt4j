@@ -1,0 +1,79 @@
+\doxysection{ppt4j.\+util.\+Resource\+Utils Class Reference}
+\hypertarget{classppt4j_1_1util_1_1_resource_utils}{}\label{classppt4j_1_1util_1_1_resource_utils}\index{ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Input\+Stream \mbox{\hyperlink{classppt4j_1_1util_1_1_resource_utils_a56a0beec12d97753a1842228e43f0335}{read\+Database}} (String name)
+\item 
+static Input\+Stream \mbox{\hyperlink{classppt4j_1_1util_1_1_resource_utils_a4d612e0d2c3218f3819152c9491744e9}{read\+Vul\+Template}} ()
+\item 
+static Input\+Stream \mbox{\hyperlink{classppt4j_1_1util_1_1_resource_utils_a64bfc5b433eb15c43cf07e7c2d41ea45}{read\+Properties}} ()
+\item 
+static Input\+Stream \mbox{\hyperlink{classppt4j_1_1util_1_1_resource_utils_a35a210649f40abd09f3de064c32e0ac7}{read\+Serialized\+File}} (int id, \mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}} type, String class\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1util_1_1_resource_utils_a56a0beec12d97753a1842228e43f0335}\index{ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}!readDatabase@{readDatabase}}
+\index{readDatabase@{readDatabase}!ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}}
+\doxysubsubsection{\texorpdfstring{readDatabase()}{readDatabase()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_resource_utils_a56a0beec12d97753a1842228e43f0335} 
+static Input\+Stream ppt4j.\+util.\+Resource\+Utils.\+read\+Database (\begin{DoxyParamCaption}\item[{String}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads a specified database entry from a zip file located at the given path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the database entry to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Input\+Stream containing the data of the specified database entry 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_resource_utils_a64bfc5b433eb15c43cf07e7c2d41ea45}\index{ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}!readProperties@{readProperties}}
+\index{readProperties@{readProperties}!ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}}
+\doxysubsubsection{\texorpdfstring{readProperties()}{readProperties()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_resource_utils_a64bfc5b433eb15c43cf07e7c2d41ea45} 
+static Input\+Stream ppt4j.\+util.\+Resource\+Utils.\+read\+Properties (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method reads the properties file located at the specified path and returns an Input\+Stream object.
+
+\begin{DoxyReturn}{Returns}
+Input\+Stream object containing the properties file data 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_resource_utils_a35a210649f40abd09f3de064c32e0ac7}\index{ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}!readSerializedFile@{readSerializedFile}}
+\index{readSerializedFile@{readSerializedFile}!ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}}
+\doxysubsubsection{\texorpdfstring{readSerializedFile()}{readSerializedFile()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_resource_utils_a35a210649f40abd09f3de064c32e0ac7} 
+static Input\+Stream ppt4j.\+util.\+Resource\+Utils.\+read\+Serialized\+File (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{\mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}}}]{type}{, }\item[{String}]{class\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads a serialized file from the specified location based on the given id, database type, and class name. Replaces dots and slashes in the class name with underscores to create the expected file path. Reads the serialized file from the expected file path using the read\+Database method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the unique identifier for the file \\
+\hline
+{\em type} & the type of database being used \\
+\hline
+{\em class\+Name} & the name of the class containing the serialized data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Input\+Stream of the serialized file 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_resource_utils_a4d612e0d2c3218f3819152c9491744e9}\index{ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}!readVulTemplate@{readVulTemplate}}
+\index{readVulTemplate@{readVulTemplate}!ppt4j.util.ResourceUtils@{ppt4j.util.ResourceUtils}}
+\doxysubsubsection{\texorpdfstring{readVulTemplate()}{readVulTemplate()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_resource_utils_a4d612e0d2c3218f3819152c9491744e9} 
+static Input\+Stream ppt4j.\+util.\+Resource\+Utils.\+read\+Vul\+Template (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads the vulnerability template file and returns it as an Input\+Stream.
+
+\begin{DoxyReturn}{Returns}
+Input\+Stream of the vulnerability template file 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_resource_utils_8java}{Resource\+Utils.\+java}}\end{DoxyCompactItemize}

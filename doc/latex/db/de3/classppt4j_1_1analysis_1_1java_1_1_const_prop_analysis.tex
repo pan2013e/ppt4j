@@ -1,0 +1,68 @@
+\doxysection{ppt4j.\+analysis.\+java.\+Const\+Prop\+Analysis\texorpdfstring{$<$}{<} R extends Ct\+Element \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{}\label{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}\index{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}}
+Inheritance diagram for ppt4j.\+analysis.\+java.\+Const\+Prop\+Analysis\texorpdfstring{$<$}{<} R extends Ct\+Element \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{db/de3/classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_a69a0d4610cdf3c33fba3b5261b3fa817}{Const\+Prop\+Analysis}} (R element)
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{Const\+Prop\+Analysis}}$<$ R $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_a829506666333fa37bd3714ba7684520d}{analyze}} ()
+\item 
+boolean \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_aa64795aa5719071fe1a3c79d69f57e6a}{is\+Literal}} ()
+\item 
+Ct\+Literal$<$?$>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_ae249006c346027bd09ab3bf41bd0ea3b}{get\+Literal}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_a69a0d4610cdf3c33fba3b5261b3fa817}\index{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}!ConstPropAnalysis@{ConstPropAnalysis}}
+\index{ConstPropAnalysis@{ConstPropAnalysis}!ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}}
+\doxysubsubsection{\texorpdfstring{ConstPropAnalysis()}{ConstPropAnalysis()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_a69a0d4610cdf3c33fba3b5261b3fa817} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{ppt4j.\+analysis.\+java.\+Const\+Prop\+Analysis}}$<$ R extends Ct\+Element $>$.\mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{Const\+Prop\+Analysis}} (\begin{DoxyParamCaption}\item[{R}]{element}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_a829506666333fa37bd3714ba7684520d}\index{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}!analyze@{analyze}}
+\index{analyze@{analyze}!ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_a829506666333fa37bd3714ba7684520d} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{Const\+Prop\+Analysis}}$<$ R $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{ppt4j.\+analysis.\+java.\+Const\+Prop\+Analysis}}$<$ R extends Ct\+Element $>$.analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method performs constant propagation analysis on the given element. It evaluates the element using a \doxylink{classppt4j_1_1analysis_1_1java_1_1_const_evaluator}{Const\+Evaluator} and checks various conditions based on the type of element (Ct\+Field\+Read) and its modifiers. If the element is a Ct\+Field\+Read representing a specific key ("{}int\#length"{}) or has certain modifiers (static without final or non-\/\+Java library field with no modifiers), the element itself is marked as the result. If the key corresponds to a value in a predefined library, a new literal element is created with that value and set as the result. If the element represents a platform-\/specific field, it is also marked as the result. Otherwise, the element is evaluated using the \doxylink{classppt4j_1_1analysis_1_1java_1_1_const_evaluator}{Const\+Evaluator} and the result is set accordingly. The method returns an instance of \doxylink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{Const\+Prop\+Analysis} representing the result of the analysis. 
+
+Implements \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1_abstract_analysis_ab508945c1ab92aacc8e277cd3f463477}{ppt4j.\+analysis.\+Abstract\+Analysis}}.
+
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_ae249006c346027bd09ab3bf41bd0ea3b}\index{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}!getLiteral@{getLiteral}}
+\index{getLiteral@{getLiteral}!ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}}
+\doxysubsubsection{\texorpdfstring{getLiteral()}{getLiteral()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_ae249006c346027bd09ab3bf41bd0ea3b} 
+Ct\+Literal$<$?$>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{ppt4j.\+analysis.\+java.\+Const\+Prop\+Analysis}}$<$ R extends Ct\+Element $>$.get\+Literal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the Ct\+Literal object from the result.
+
+\begin{DoxyReturn}{Returns}
+the Ct\+Literal object contained in the result 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_aa64795aa5719071fe1a3c79d69f57e6a}\index{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}!isLiteral@{isLiteral}}
+\index{isLiteral@{isLiteral}!ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$@{ppt4j.analysis.java.ConstPropAnalysis$<$ R extends CtElement $>$}}
+\doxysubsubsection{\texorpdfstring{isLiteral()}{isLiteral()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis_aa64795aa5719071fe1a3c79d69f57e6a} 
+boolean \mbox{\hyperlink{classppt4j_1_1analysis_1_1java_1_1_const_prop_analysis}{ppt4j.\+analysis.\+java.\+Const\+Prop\+Analysis}}$<$ R extends Ct\+Element $>$.is\+Literal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if the result is a literal value that is not null.
+
+\begin{DoxyReturn}{Returns}
+true if the result is a literal value that is not null, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/java/\mbox{\hyperlink{_const_prop_analysis_8java}{Const\+Prop\+Analysis.\+java}}\end{DoxyCompactItemize}

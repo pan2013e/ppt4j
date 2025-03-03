@@ -1,0 +1,87 @@
+\doxysection{ppt4j.\+util.\+Property\+Utils Class Reference}
+\hypertarget{classppt4j_1_1util_1_1_property_utils}{}\label{classppt4j_1_1util_1_1_property_utils}\index{ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1util_1_1_property_utils_a7552144e7780e60eebdccc14138f2e15}{load}} (Input\+Stream is)
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1util_1_1_property_utils_a3b15043edc13932fcf87efbd7b10796d}{override}} (Properties props)
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1util_1_1_property_utils_abe8d38b4c624d952de92d83c63a1247e}{init}} ()
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1util_1_1_property_utils_ae2c3e78d57d0c7eb690f6c898cb8f524}{init\+Value}} (Class$<$?$>$ clazz)
+\item 
+static String \mbox{\hyperlink{classppt4j_1_1util_1_1_property_utils_a7ba808f2d801dd8b96d3a2c7af9b463f}{get\+Property}} (String key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1util_1_1_property_utils_a7ba808f2d801dd8b96d3a2c7af9b463f}\index{ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_property_utils_a7ba808f2d801dd8b96d3a2c7af9b463f} 
+static String ppt4j.\+util.\+Property\+Utils.\+get\+Property (\begin{DoxyParamCaption}\item[{String}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves the value of a property based on the provided key. If the key is null or empty, an exception is thrown. If the property is not found in the properties map, it falls back to retrieving it from the system properties. If the property is still not found, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key of the property to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the property as a String 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+State\+Exception} & if the key is null or empty, or if the property is not found \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1util_1_1_property_utils_abe8d38b4c624d952de92d83c63a1247e}\index{ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}!init@{init}}
+\index{init@{init}!ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_property_utils_abe8d38b4c624d952de92d83c63a1247e} 
+static void ppt4j.\+util.\+Property\+Utils.\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initializes the properties of all classes in the "{}ppt4j"{} package using reflection. For each class in the package, calls the init\+Value method from the \doxylink{classppt4j_1_1util_1_1_property_utils}{Property\+Utils} class to initialize the properties. \Hypertarget{classppt4j_1_1util_1_1_property_utils_ae2c3e78d57d0c7eb690f6c898cb8f524}\index{ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}!initValue@{initValue}}
+\index{initValue@{initValue}!ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}}
+\doxysubsubsection{\texorpdfstring{initValue()}{initValue()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_property_utils_ae2c3e78d57d0c7eb690f6c898cb8f524} 
+static void ppt4j.\+util.\+Property\+Utils.\+init\+Value (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{clazz}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initializes the values of fields in a given class using properties defined in the \doxylink{interfaceppt4j_1_1annotation_1_1_property}{Property} annotation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & the class containing the fields to be initialized \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1util_1_1_property_utils_a7552144e7780e60eebdccc14138f2e15}\index{ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}!load@{load}}
+\index{load@{load}!ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_property_utils_a7552144e7780e60eebdccc14138f2e15} 
+static void ppt4j.\+util.\+Property\+Utils.\+load (\begin{DoxyParamCaption}\item[{Input\+Stream}]{is}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads a properties file from the given input stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & the input stream from which to load the properties file \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classppt4j_1_1util_1_1_property_utils_a3b15043edc13932fcf87efbd7b10796d}\index{ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}!override@{override}}
+\index{override@{override}!ppt4j.util.PropertyUtils@{ppt4j.util.PropertyUtils}}
+\doxysubsubsection{\texorpdfstring{override()}{override()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_property_utils_a3b15043edc13932fcf87efbd7b10796d} 
+static void ppt4j.\+util.\+Property\+Utils.\+override (\begin{DoxyParamCaption}\item[{Properties}]{props}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Overrides the current properties with the new properties provided. Copies all of the mappings from the specified properties to this properties object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & the properties to be added/overridden \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_property_utils_8java}{Property\+Utils.\+java}}\end{DoxyCompactItemize}

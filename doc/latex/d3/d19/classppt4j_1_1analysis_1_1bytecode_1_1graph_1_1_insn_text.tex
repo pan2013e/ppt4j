@@ -1,0 +1,49 @@
+\doxysection{ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Text Class Reference}
+\hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text}{}\label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text}\index{ppt4j.analysis.bytecode.graph.InsnText@{ppt4j.analysis.bytecode.graph.InsnText}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text_ae56950aaf34852a1a58f648005d356a2}{to\+Lines}} (Abstract\+Insn\+Node\mbox{[}$\,$\mbox{]} array)
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text_aded9514415ab38e1c731811c009f7f00}{to\+Lines}} (Abstract\+Insn\+Node node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text_aded9514415ab38e1c731811c009f7f00}\index{ppt4j.analysis.bytecode.graph.InsnText@{ppt4j.analysis.bytecode.graph.InsnText}!toLines@{toLines}}
+\index{toLines@{toLines}!ppt4j.analysis.bytecode.graph.InsnText@{ppt4j.analysis.bytecode.graph.InsnText}}
+\doxysubsubsection{\texorpdfstring{toLines()}{toLines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text_aded9514415ab38e1c731811c009f7f00} 
+List$<$ String $>$ ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Text.\+to\+Lines (\begin{DoxyParamCaption}\item[{Abstract\+Insn\+Node}]{node}{}\end{DoxyParamCaption})}
+
+Converts the given Abstract\+Insn\+Node into a list of strings representing the lines of code. The method uses a Trace\+Method\+Visitor to visit the node and extract the text. Each line is trimmed and checked against a PRINT\+\_\+\+LENGTH\+\_\+\+LIMIT, truncating it if necessary. The final list of lines is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & the Abstract\+Insn\+Node to convert to lines \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of strings representing the lines of code extracted from the node 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text_ae56950aaf34852a1a58f648005d356a2}\index{ppt4j.analysis.bytecode.graph.InsnText@{ppt4j.analysis.bytecode.graph.InsnText}!toLines@{toLines}}
+\index{toLines@{toLines}!ppt4j.analysis.bytecode.graph.InsnText@{ppt4j.analysis.bytecode.graph.InsnText}}
+\doxysubsubsection{\texorpdfstring{toLines()}{toLines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1graph_1_1_insn_text_ae56950aaf34852a1a58f648005d356a2} 
+List$<$ String $>$ ppt4j.\+analysis.\+bytecode.\+graph.\+Insn\+Text.\+to\+Lines (\begin{DoxyParamCaption}\item[{Abstract\+Insn\+Node\mbox{[}$\,$\mbox{]}}]{array}{}\end{DoxyParamCaption})}
+
+Converts an array of Abstract\+Insn\+Node objects into a list of strings representing each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array of Abstract\+Insn\+Node objects to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of strings representing each Abstract\+Insn\+Node in the input array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/bytecode/graph/\mbox{\hyperlink{_insn_text_8java}{Insn\+Text.\+java}}\end{DoxyCompactItemize}

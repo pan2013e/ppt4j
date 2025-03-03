@@ -1,0 +1,165 @@
+\doxysection{ppt4j.\+factory.\+Extractor\+Factory Class Reference}
+\hypertarget{classppt4j_1_1factory_1_1_extractor_factory}{}\label{classppt4j_1_1factory_1_1_extractor_factory}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_a6e0a36c24939a578b45f6b89360f5145}{get\+Pre\+Java\+Class}} (String class\+Name)
+\item 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_a317b83e46bbf30e872c3810d7bdea088}{get\+Post\+Java\+Class}} (String class\+Name)
+\item 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor}{Bytecode\+Extractor}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_aa259fce8f11dfff2a3b8a9d1f42b5dc6}{get\+Bytecode\+Class}} (String class\+Name)  throws IOException 
+\item 
+\mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_ac03c2d7f416c2077f50e5ca6a209d6c1}{get\+Pre2\+Class}} (String class\+Name)  throws IOException 
+\item 
+\mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_aa65fdaeb32c7769bcb9b624cbe800cf3}{get\+Post2\+Class}} (String class\+Name)  throws IOException 
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_a8154ce4f1725482130cfebe635deb721}{get}} (String prepatch\+Path, String postpatch\+Path, String class\+Path, String... third\+Party\+Src\+Path)
+\item 
+static \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory_a68feda6475ef8d0553dd455aef63ba8c}{get}} (\mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} vuln, \mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}} type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_a8154ce4f1725482130cfebe635deb721}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!get@{get}}
+\index{get@{get}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_a8154ce4f1725482130cfebe635deb721} 
+static \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}} ppt4j.\+factory.\+Extractor\+Factory.\+get (\begin{DoxyParamCaption}\item[{String}]{prepatch\+Path}{, }\item[{String}]{postpatch\+Path}{, }\item[{String}]{class\+Path}{, }\item[{String...}]{third\+Party\+Src\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an instance of \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory} initialized with the provided prepatch\+Path, postpatch\+Path, class\+Path, and third\+Party\+Src\+Path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em prepatch\+Path} & the path to the pre-\/patch files \\
+\hline
+{\em postpatch\+Path} & the path to the post-\/patch files \\
+\hline
+{\em class\+Path} & the class path for the \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory} \\
+\hline
+{\em third\+Party\+Src\+Path} & additional source paths (optional) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an instance of \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory} 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_a68feda6475ef8d0553dd455aef63ba8c}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!get@{get}}
+\index{get@{get}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_a68feda6475ef8d0553dd455aef63ba8c} 
+static \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}} ppt4j.\+factory.\+Extractor\+Factory.\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}}}]{vuln}{, }\item[{\mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves an \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory} based on the specified \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} and \doxylink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}. This method generates necessary paths, checks the VM class path, and initializes the \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vuln} & the \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object \\
+\hline
+{\em type} & the \doxylink{enumppt4j_1_1database_1_1_database_type}{Database\+Type} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory} object 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_aa259fce8f11dfff2a3b8a9d1f42b5dc6}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!getBytecodeClass@{getBytecodeClass}}
+\index{getBytecodeClass@{getBytecodeClass}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{getBytecodeClass()}{getBytecodeClass()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_aa259fce8f11dfff2a3b8a9d1f42b5dc6} 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor}{Bytecode\+Extractor}} ppt4j.\+factory.\+Extractor\+Factory.\+get\+Bytecode\+Class (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{}\end{DoxyParamCaption}) throws IOException}
+
+Retrieves the bytecode of a class specified by the given class name. If the bytecode for the class is already cached, it returns the cached instance. If the class is contained within a JAR file, it extracts the bytecode from the JAR file. If the class is not found in the JAR file, it logs a debug message and returns a nil \doxylink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor}{Bytecode\+Extractor}. If the class is not within a JAR file, it extracts the bytecode from the classpath directory. It parses the extracted bytecode, adds any inner classes found within the same directory or JAR file, caches the extracted bytecode, and returns the \doxylink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor}{Bytecode\+Extractor} instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & the name of the class for which bytecode needs to be extracted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor}{Bytecode\+Extractor} instance containing the bytecode of the specified class 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if an I/O error occurs while attempting to extract bytecode \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_aa65fdaeb32c7769bcb9b624cbe800cf3}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!getPost2Class@{getPost2Class}}
+\index{getPost2Class@{getPost2Class}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{getPost2Class()}{getPost2Class()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_aa65fdaeb32c7769bcb9b624cbe800cf3} 
+\mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher}} ppt4j.\+factory.\+Extractor\+Factory.\+get\+Post2\+Class (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{}\end{DoxyParamCaption}) throws IOException}
+
+Retrieves a \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object associated with a given class name. If the \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object is already cached, it is returned directly. Otherwise, a new \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object is created using the class name to retrieve the corresponding Java class and bytecode class. The new \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object is then cached for future use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & the name of the class to retrieve the \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object associated with the provided class name 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if an I/O error occurs during the retrieval process \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_a317b83e46bbf30e872c3810d7bdea088}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!getPostJavaClass@{getPostJavaClass}}
+\index{getPostJavaClass@{getPostJavaClass}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{getPostJavaClass()}{getPostJavaClass()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_a317b83e46bbf30e872c3810d7bdea088} 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor}} ppt4j.\+factory.\+Extractor\+Factory.\+get\+Post\+Java\+Class (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{}\end{DoxyParamCaption})}
+
+Returns a \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} object for the specified class name from the cached\+Post\+Extractors map. If the \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} object does not exist in the map, a new \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} object is created using the specified class name and added to the map before returning.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & the name of the Java class to extract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} object for the specified class name 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_ac03c2d7f416c2077f50e5ca6a209d6c1}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!getPre2Class@{getPre2Class}}
+\index{getPre2Class@{getPre2Class}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{getPre2Class()}{getPre2Class()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_ac03c2d7f416c2077f50e5ca6a209d6c1} 
+\mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher}} ppt4j.\+factory.\+Extractor\+Factory.\+get\+Pre2\+Class (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{}\end{DoxyParamCaption}) throws IOException}
+
+Retrieves a \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object for the given class name. If the \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object for the class name is already cached, it is returned. Otherwise, a new \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object is created using the pre-\/java class and bytecode class of the given class name, and then cached for future use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & the name of the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{interfaceppt4j_1_1analysis_1_1patch_1_1_cross_matcher}{Cross\+Matcher} object for the given class name 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1factory_1_1_extractor_factory_a6e0a36c24939a578b45f6b89360f5145}\index{ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}!getPreJavaClass@{getPreJavaClass}}
+\index{getPreJavaClass@{getPreJavaClass}!ppt4j.factory.ExtractorFactory@{ppt4j.factory.ExtractorFactory}}
+\doxysubsubsection{\texorpdfstring{getPreJavaClass()}{getPreJavaClass()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_extractor_factory_a6e0a36c24939a578b45f6b89360f5145} 
+\mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor}} ppt4j.\+factory.\+Extractor\+Factory.\+get\+Pre\+Java\+Class (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{}\end{DoxyParamCaption})}
+
+Retrieves a pre-\/patch Java class extractor for the specified class name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & the name of the Java class to extract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \doxylink{classppt4j_1_1feature_1_1java_1_1_java_extractor}{Java\+Extractor} object for the specified class name from the pre-\/patch database 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/factory/\mbox{\hyperlink{_extractor_factory_8java}{Extractor\+Factory.\+java}}\end{DoxyCompactItemize}

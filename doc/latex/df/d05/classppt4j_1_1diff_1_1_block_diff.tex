@@ -1,0 +1,82 @@
+\doxysection{ppt4j.\+diff.\+Block\+Diff Class Reference}
+\hypertarget{classppt4j_1_1diff_1_1_block_diff}{}\label{classppt4j_1_1diff_1_1_block_diff}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1diff_1_1_block_diff_ab9f1994d607ada50ec61f7d70dd5f9ed}{Block\+Diff}} (List$<$ Pair$<$ Integer, Line $>$ $>$ lines)
+\item 
+List$<$ Integer $>$ \mbox{\hyperlink{classppt4j_1_1diff_1_1_block_diff_af5beeec694d48f68ac1c0ecf067b82df}{get\+Addition\+Lines}} ()
+\item 
+List$<$ Integer $>$ \mbox{\hyperlink{classppt4j_1_1diff_1_1_block_diff_a157e7205916bcceafbb9671923e5c314}{get\+Deletion\+Lines}} ()
+\item 
+boolean \mbox{\hyperlink{classppt4j_1_1diff_1_1_block_diff_a4d6dc25510f5809349016845bac1a58d}{is\+Pure\+Addition}} ()
+\item 
+boolean \mbox{\hyperlink{classppt4j_1_1diff_1_1_block_diff_a6c063371980998ad0e2aa1ca70510fae}{is\+Pure\+Deletion}} ()
+\item 
+String \mbox{\hyperlink{classppt4j_1_1diff_1_1_block_diff_a81ac213718d13116348356f50f88862c}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1diff_1_1_block_diff_ab9f1994d607ada50ec61f7d70dd5f9ed}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}!BlockDiff@{BlockDiff}}
+\index{BlockDiff@{BlockDiff}!ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection{\texorpdfstring{BlockDiff()}{BlockDiff()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_block_diff_ab9f1994d607ada50ec61f7d70dd5f9ed} 
+ppt4j.\+diff.\+Block\+Diff.\+Block\+Diff (\begin{DoxyParamCaption}\item[{List$<$ Pair$<$ Integer, Line $>$ $>$}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1diff_1_1_block_diff_af5beeec694d48f68ac1c0ecf067b82df}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}!getAdditionLines@{getAdditionLines}}
+\index{getAdditionLines@{getAdditionLines}!ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection{\texorpdfstring{getAdditionLines()}{getAdditionLines()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_block_diff_af5beeec694d48f68ac1c0ecf067b82df} 
+List$<$ Integer $>$ ppt4j.\+diff.\+Block\+Diff.\+get\+Addition\+Lines (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a list of line numbers that represent additions in a document. An addition line is identified by having a Line\+Type of TO.
+
+\begin{DoxyReturn}{Returns}
+A list of integers representing line numbers of additions 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_block_diff_a157e7205916bcceafbb9671923e5c314}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}!getDeletionLines@{getDeletionLines}}
+\index{getDeletionLines@{getDeletionLines}!ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection{\texorpdfstring{getDeletionLines()}{getDeletionLines()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_block_diff_a157e7205916bcceafbb9671923e5c314} 
+List$<$ Integer $>$ ppt4j.\+diff.\+Block\+Diff.\+get\+Deletion\+Lines (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method retrieves a list of line numbers corresponding to deletion lines in a document. Deletion lines are identified by having a Line\+Type of FROM.
+
+\begin{DoxyReturn}{Returns}
+a list of integers representing line numbers of deletion lines 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_block_diff_a4d6dc25510f5809349016845bac1a58d}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}!isPureAddition@{isPureAddition}}
+\index{isPureAddition@{isPureAddition}!ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection{\texorpdfstring{isPureAddition()}{isPureAddition()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_block_diff_a4d6dc25510f5809349016845bac1a58d} 
+boolean ppt4j.\+diff.\+Block\+Diff.\+is\+Pure\+Addition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if the method only involves addition and no deletion. Returns true if there are no deletion lines present, false otherwise.
+
+\begin{DoxyReturn}{Returns}
+true if there are no deletion lines, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_block_diff_a6c063371980998ad0e2aa1ca70510fae}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}!isPureDeletion@{isPureDeletion}}
+\index{isPureDeletion@{isPureDeletion}!ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection{\texorpdfstring{isPureDeletion()}{isPureDeletion()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_block_diff_a6c063371980998ad0e2aa1ca70510fae} 
+boolean ppt4j.\+diff.\+Block\+Diff.\+is\+Pure\+Deletion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method checks if the current changeset is a pure deletion, meaning that there are no lines added. \begin{DoxyReturn}{Returns}
+true if the changeset is a pure deletion, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_block_diff_a81ac213718d13116348356f50f88862c}\index{ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}!toString@{toString}}
+\index{toString@{toString}!ppt4j.diff.BlockDiff@{ppt4j.diff.BlockDiff}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_block_diff_a81ac213718d13116348356f50f88862c} 
+String ppt4j.\+diff.\+Block\+Diff.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a string representation of the object by iterating through each line in the \textquotesingle{}lines\textquotesingle{} list. For each line, appends a prefix \textquotesingle{}-\/\textquotesingle{} if the line type is FROM, \textquotesingle{}+\textquotesingle{} if the line type is TO. Throws an Illegal\+State\+Exception if the line type is neither FROM nor TO. Appends the content of the line followed by a newline character to the String\+Builder. Finally, returns the resulting string. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/diff/\mbox{\hyperlink{_block_diff_8java}{Block\+Diff.\+java}}\end{DoxyCompactItemize}

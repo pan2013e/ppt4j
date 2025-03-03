@@ -1,0 +1,79 @@
+\doxysection{ppt4j.\+util.\+Set\+Utils Class Reference}
+\hypertarget{classppt4j_1_1util_1_1_set_utils}{}\label{classppt4j_1_1util_1_1_set_utils}\index{ppt4j.util.SetUtils@{ppt4j.util.SetUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static$<$ T $>$ Set$<$ T $>$ \mbox{\hyperlink{classppt4j_1_1util_1_1_set_utils_a499f75d0e3eae12171e27a0765506461}{intersection}} (Set$<$ T $>$ set1, Set$<$ T $>$ set2)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \mbox{\hyperlink{classppt4j_1_1util_1_1_set_utils_a7787ee20fed0f87aa1abf8de46204c25}{union}} (Set$<$ T $>$ set1, Set$<$ T $>$ set2)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \mbox{\hyperlink{classppt4j_1_1util_1_1_set_utils_a8e68775dcb4bf0dcd2cc5171fccdab3d}{difference}} (Set$<$ T $>$ set1, Set$<$ T $>$ set2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1util_1_1_set_utils_a8e68775dcb4bf0dcd2cc5171fccdab3d}\index{ppt4j.util.SetUtils@{ppt4j.util.SetUtils}!difference@{difference}}
+\index{difference@{difference}!ppt4j.util.SetUtils@{ppt4j.util.SetUtils}}
+\doxysubsubsection{\texorpdfstring{difference()}{difference()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_set_utils_a8e68775dcb4bf0dcd2cc5171fccdab3d} 
+static$<$ T $>$ Set$<$ T $>$ ppt4j.\+util.\+Set\+Utils.\+difference (\begin{DoxyParamCaption}\item[{Set$<$ T $>$}]{set1}{, }\item[{Set$<$ T $>$}]{set2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a new Set containing the elements that are present in set1 but not in set2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & the type of elements in the sets \\
+\hline
+{\em set1} & the first set \\
+\hline
+{\em set2} & the second set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Set containing the elements that are in set1 but not in set2 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_set_utils_a499f75d0e3eae12171e27a0765506461}\index{ppt4j.util.SetUtils@{ppt4j.util.SetUtils}!intersection@{intersection}}
+\index{intersection@{intersection}!ppt4j.util.SetUtils@{ppt4j.util.SetUtils}}
+\doxysubsubsection{\texorpdfstring{intersection()}{intersection()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_set_utils_a499f75d0e3eae12171e27a0765506461} 
+static$<$ T $>$ Set$<$ T $>$ ppt4j.\+util.\+Set\+Utils.\+intersection (\begin{DoxyParamCaption}\item[{Set$<$ T $>$}]{set1}{, }\item[{Set$<$ T $>$}]{set2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a new Set containing the intersection of the elements in the two input Sets. The intersection of two sets is the set of elements that are common to both sets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & the type of elements in the Sets \\
+\hline
+{\em set1} & the first Set of elements \\
+\hline
+{\em set2} & the second Set of elements \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new Set containing the intersection of elements from set1 and set2 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1util_1_1_set_utils_a7787ee20fed0f87aa1abf8de46204c25}\index{ppt4j.util.SetUtils@{ppt4j.util.SetUtils}!union@{union}}
+\index{union@{union}!ppt4j.util.SetUtils@{ppt4j.util.SetUtils}}
+\doxysubsubsection{\texorpdfstring{union()}{union()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1util_1_1_set_utils_a7787ee20fed0f87aa1abf8de46204c25} 
+static$<$ T $>$ Set$<$ T $>$ ppt4j.\+util.\+Set\+Utils.\+union (\begin{DoxyParamCaption}\item[{Set$<$ T $>$}]{set1}{, }\item[{Set$<$ T $>$}]{set2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the union of two sets, which is a set containing all the distinct elements from both input sets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & the type of elements in the sets \\
+\hline
+{\em set1} & the first set \\
+\hline
+{\em set2} & the second set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a set containing all the distinct elements from both input sets 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_set_utils_8java}{Set\+Utils.\+java}}\end{DoxyCompactItemize}

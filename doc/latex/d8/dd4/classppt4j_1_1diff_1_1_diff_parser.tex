@@ -1,0 +1,119 @@
+\doxysection{ppt4j.\+diff.\+Diff\+Parser Class Reference}
+\hypertarget{classppt4j_1_1diff_1_1_diff_parser}{}\label{classppt4j_1_1diff_1_1_diff_parser}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Sigint\+Handler}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_aa6320e4bb4e27a163accd445092b3281}{Diff\+Parser}} (URL url)  throws IOException 
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_a0211dd21d75f82e4f4198b6b77330618}{download}} (URL url)  throws IOException 
+\item 
+\mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_a7c53bd21e3c165e856471f40974d244a}{Diff\+Parser}} (String patch\+Path)  throws IOException 
+\item 
+int \mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_a1eacafa66530d0213dfe1fb1fee3bdd7}{get\+Num\+Of\+Diffs}} ()
+\item 
+String \mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_aaab729c5c90466536bae59ca3668d52b}{get\+File\+Name}} (int diff\+Index, boolean remove\+Prefix)
+\item 
+\mbox{\hyperlink{classppt4j_1_1diff_1_1_file_diff}{File\+Diff}} \mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_a6eada61446760676d50698e7a5a100f6}{get\+File\+Diff}} (int diff\+Index)
+\item 
+String \mbox{\hyperlink{classppt4j_1_1diff_1_1_diff_parser_add933fa6eac3d69d4d4d873a54586d8e}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_aa6320e4bb4e27a163accd445092b3281}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!DiffParser@{DiffParser}}
+\index{DiffParser@{DiffParser}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{DiffParser()}{DiffParser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_aa6320e4bb4e27a163accd445092b3281} 
+ppt4j.\+diff.\+Diff\+Parser.\+Diff\+Parser (\begin{DoxyParamCaption}\item[{URL}]{url}{}\end{DoxyParamCaption}) throws IOException}
+
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_a7c53bd21e3c165e856471f40974d244a}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!DiffParser@{DiffParser}}
+\index{DiffParser@{DiffParser}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{DiffParser()}{DiffParser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_a7c53bd21e3c165e856471f40974d244a} 
+ppt4j.\+diff.\+Diff\+Parser.\+Diff\+Parser (\begin{DoxyParamCaption}\item[{String}]{patch\+Path}{}\end{DoxyParamCaption}) throws IOException}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_a0211dd21d75f82e4f4198b6b77330618}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!download@{download}}
+\index{download@{download}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_a0211dd21d75f82e4f4198b6b77330618} 
+byte\mbox{[}$\,$\mbox{]} ppt4j.\+diff.\+Diff\+Parser.\+download (\begin{DoxyParamCaption}\item[{URL}]{url}{}\end{DoxyParamCaption}) throws IOException}
+
+Downloads a file from the provided URL. If the file already exists locally, it reads its contents into a byte array. If the file does not exist, it creates a new file, downloads the contents from the URL, writes the contents to the file, and performs an integrity check. If an IOException occurs during the download process, the error is logged and the system exits with status code 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the URL pointing to the file to download \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte array containing the downloaded file contents 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_a6eada61446760676d50698e7a5a100f6}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!getFileDiff@{getFileDiff}}
+\index{getFileDiff@{getFileDiff}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{getFileDiff()}{getFileDiff()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_a6eada61446760676d50698e7a5a100f6} 
+\mbox{\hyperlink{classppt4j_1_1diff_1_1_file_diff}{File\+Diff}} ppt4j.\+diff.\+Diff\+Parser.\+get\+File\+Diff (\begin{DoxyParamCaption}\item[{int}]{diff\+Index}{}\end{DoxyParamCaption})}
+
+Returns the \doxylink{classppt4j_1_1diff_1_1_file_diff}{File\+Diff} object at the specified index in the list of file differences.
+
+
+\begin{DoxyParams}{Parameters}
+{\em diff\+Index} & the index of the \doxylink{classppt4j_1_1diff_1_1_file_diff}{File\+Diff} object to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{classppt4j_1_1diff_1_1_file_diff}{File\+Diff} object at the specified index 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_aaab729c5c90466536bae59ca3668d52b}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_aaab729c5c90466536bae59ca3668d52b} 
+String ppt4j.\+diff.\+Diff\+Parser.\+get\+File\+Name (\begin{DoxyParamCaption}\item[{int}]{diff\+Index}{, }\item[{boolean}]{remove\+Prefix}{}\end{DoxyParamCaption})}
+
+Returns the file name at the specified index in the list of differences. If the file name is "{}/dev/null"{}, then it returns the file name at the "{}to"{} side of the difference instead. If remove\+Prefix is true, it removes any directory path prefixes from the file name before returning.
+
+
+\begin{DoxyParams}{Parameters}
+{\em diff\+Index} & the index of the difference \\
+\hline
+{\em remove\+Prefix} & whether to remove directory path prefixes from the file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the file name at the specified index in the list of differences 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_a1eacafa66530d0213dfe1fb1fee3bdd7}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!getNumOfDiffs@{getNumOfDiffs}}
+\index{getNumOfDiffs@{getNumOfDiffs}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{getNumOfDiffs()}{getNumOfDiffs()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_a1eacafa66530d0213dfe1fb1fee3bdd7} 
+int ppt4j.\+diff.\+Diff\+Parser.\+get\+Num\+Of\+Diffs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of differences in the list.
+
+\begin{DoxyReturn}{Returns}
+the number of differences in the list 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1diff_1_1_diff_parser_add933fa6eac3d69d4d4d873a54586d8e}\index{ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}!toString@{toString}}
+\index{toString@{toString}!ppt4j.diff.DiffParser@{ppt4j.diff.DiffParser}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1diff_1_1_diff_parser_add933fa6eac3d69d4d4d873a54586d8e} 
+String ppt4j.\+diff.\+Diff\+Parser.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a string representation of this object by iterating through the list of File\+Diffs and appending the file name and the string representation of each \doxylink{classppt4j_1_1diff_1_1_file_diff}{File\+Diff} to a String\+Builder.
+
+\begin{DoxyReturn}{Returns}
+a string representation of this object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/diff/\mbox{\hyperlink{_diff_parser_8java}{Diff\+Parser.\+java}}\end{DoxyCompactItemize}

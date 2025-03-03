@@ -1,0 +1,84 @@
+\doxysection{ppt4j.\+factory.\+Database\+Factory Class Reference}
+\hypertarget{classppt4j_1_1factory_1_1_database_factory}{}\label{classppt4j_1_1factory_1_1_database_factory}\index{ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Memory\+Class\+Loader}
+\item 
+class {\bfseries Memory\+Java\+File\+Manager}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_database_factory_a5b83f74771e928410f7e58140da316ef}{make\+Dataset}} (@Non\+Null \mbox{\hyperlink{classppt4j_1_1database_1_1_vulnerability_info}{Vulnerability\+Info}} info)
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_database_factory_a1a7347fe24acd48a90289f87f854529a}{make\+Dataset}} (Input\+Stream json\+Input)  throws IOException 
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} \mbox{\hyperlink{classppt4j_1_1factory_1_1_database_factory_a03ffc8051c7e9386981dff1abcd1574e}{get\+By\+Database\+Id}} (int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1factory_1_1_database_factory_a03ffc8051c7e9386981dff1abcd1574e}\index{ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}!getByDatabaseId@{getByDatabaseId}}
+\index{getByDatabaseId@{getByDatabaseId}!ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}}
+\doxysubsubsection{\texorpdfstring{getByDatabaseId()}{getByDatabaseId()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_database_factory_a03ffc8051c7e9386981dff1abcd1574e} 
+static \mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} ppt4j.\+factory.\+Database\+Factory.\+get\+By\+Database\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves a \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object by its database id. If the \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object is already cached, it is returned from the cache. If the object is not cached, it is read from a JSON file using the id and returned as a \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The database id of the \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object with the specified id 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+State\+Exception} & if the JSON file is not found or if an IOException occurs during processing \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1factory_1_1_database_factory_a5b83f74771e928410f7e58140da316ef}\index{ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}!makeDataset@{makeDataset}}
+\index{makeDataset@{makeDataset}!ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}}
+\doxysubsubsection{\texorpdfstring{makeDataset()}{makeDataset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_database_factory_a5b83f74771e928410f7e58140da316ef} 
+static \mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} ppt4j.\+factory.\+Database\+Factory.\+make\+Dataset (\begin{DoxyParamCaption}\item[{@Non\+Null \mbox{\hyperlink{classppt4j_1_1database_1_1_vulnerability_info}{Vulnerability\+Info}}}]{info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} instance using the provided \doxylink{classppt4j_1_1database_1_1_vulnerability_info}{Vulnerability\+Info} object, compiles and loads the instance, and adds it to the cached classes by Database ID and CVE ID. If a \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} with the same Database ID or CVE ID already exists in the cache, an Illegal\+State\+Exception is thrown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & the \doxylink{classppt4j_1_1database_1_1_vulnerability_info}{Vulnerability\+Info} object used to create the \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} instance 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1factory_1_1_database_factory_a1a7347fe24acd48a90289f87f854529a}\index{ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}!makeDataset@{makeDataset}}
+\index{makeDataset@{makeDataset}!ppt4j.factory.DatabaseFactory@{ppt4j.factory.DatabaseFactory}}
+\doxysubsubsection{\texorpdfstring{makeDataset()}{makeDataset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1factory_1_1_database_factory_a1a7347fe24acd48a90289f87f854529a} 
+static \mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} ppt4j.\+factory.\+Database\+Factory.\+make\+Dataset (\begin{DoxyParamCaption}\item[{Input\+Stream}]{json\+Input}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads a JSON input stream and creates a \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object based on the information provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Input} & the input stream containing JSON data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \doxylink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability} object created from the JSON input 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if an I/O error occurs while reading the input stream \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/factory/\mbox{\hyperlink{_database_factory_8java}{Database\+Factory.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\doxysection{ppt4j.\+analysis.\+bytecode.\+Arg\+Type\+Analysis Class Reference}
+\hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis}{}\label{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis}\index{ppt4j.analysis.bytecode.ArgTypeAnalysis@{ppt4j.analysis.bytecode.ArgTypeAnalysis}}
+Inheritance diagram for ppt4j.\+analysis.\+bytecode.\+Arg\+Type\+Analysis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d18/classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis_afc8dd722f32f325904c1b5e614ea551c}{Arg\+Type\+Analysis}} (String class\+Name, Method\+Node method\+Node, Map$<$ Method\+Insn\+Node, String $>$ method\+Desc\+Map)
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis}{Arg\+Type\+Analysis}} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis_a777a451b61375f28613787d473d99ae3}{analyze}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis_afc8dd722f32f325904c1b5e614ea551c}\index{ppt4j.analysis.bytecode.ArgTypeAnalysis@{ppt4j.analysis.bytecode.ArgTypeAnalysis}!ArgTypeAnalysis@{ArgTypeAnalysis}}
+\index{ArgTypeAnalysis@{ArgTypeAnalysis}!ppt4j.analysis.bytecode.ArgTypeAnalysis@{ppt4j.analysis.bytecode.ArgTypeAnalysis}}
+\doxysubsubsection{\texorpdfstring{ArgTypeAnalysis()}{ArgTypeAnalysis()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis_afc8dd722f32f325904c1b5e614ea551c} 
+ppt4j.\+analysis.\+bytecode.\+Arg\+Type\+Analysis.\+Arg\+Type\+Analysis (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{, }\item[{Method\+Node}]{method\+Node}{, }\item[{Map$<$ Method\+Insn\+Node, String $>$}]{method\+Desc\+Map}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis_a777a451b61375f28613787d473d99ae3}\index{ppt4j.analysis.bytecode.ArgTypeAnalysis@{ppt4j.analysis.bytecode.ArgTypeAnalysis}!analyze@{analyze}}
+\index{analyze@{analyze}!ppt4j.analysis.bytecode.ArgTypeAnalysis@{ppt4j.analysis.bytecode.ArgTypeAnalysis}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis_a777a451b61375f28613787d473d99ae3} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis}{Arg\+Type\+Analysis}} ppt4j.\+analysis.\+bytecode.\+Arg\+Type\+Analysis.\+analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Analyzes the given method by using a Simple\+Verifier and populates a map with the method descriptions. The method iterates over the instructions of the method and retrieves the frames from the analyzer to get the arguments of method invocations. It then builds a method signature using the method instruction and the arguments, and stores it in a map. If any exception occurs during the analysis, a log warning is generated.
+
+\begin{DoxyReturn}{Returns}
+this \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1_arg_type_analysis}{Arg\+Type\+Analysis} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1_abstract_analysis_ab508945c1ab92aacc8e277cd3f463477}{ppt4j.\+analysis.\+Abstract\+Analysis}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/bytecode/\mbox{\hyperlink{_arg_type_analysis_8java}{Arg\+Type\+Analysis.\+java}}\end{DoxyCompactItemize}

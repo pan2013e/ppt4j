@@ -1,0 +1,47 @@
+\doxysection{ppt4j.\+analysis.\+bytecode.\+Loop\+Analysis Class Reference}
+\hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis}{}\label{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis}\index{ppt4j.analysis.bytecode.LoopAnalysis@{ppt4j.analysis.bytecode.LoopAnalysis}}
+Inheritance diagram for ppt4j.\+analysis.\+bytecode.\+Loop\+Analysis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/d02/classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis_a5fbe20129db606e3d1effca1a426f499}{Loop\+Analysis}} (String class\+Name, Method\+Node method\+Node, Set$<$ Abstract\+Insn\+Node $>$ backward\+Branches)
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis}{Loop\+Analysis}} \mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis_a49a63b5f7520b73065346f91bffdd54a}{analyze}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis_a5fbe20129db606e3d1effca1a426f499}\index{ppt4j.analysis.bytecode.LoopAnalysis@{ppt4j.analysis.bytecode.LoopAnalysis}!LoopAnalysis@{LoopAnalysis}}
+\index{LoopAnalysis@{LoopAnalysis}!ppt4j.analysis.bytecode.LoopAnalysis@{ppt4j.analysis.bytecode.LoopAnalysis}}
+\doxysubsubsection{\texorpdfstring{LoopAnalysis()}{LoopAnalysis()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis_a5fbe20129db606e3d1effca1a426f499} 
+ppt4j.\+analysis.\+bytecode.\+Loop\+Analysis.\+Loop\+Analysis (\begin{DoxyParamCaption}\item[{String}]{class\+Name}{, }\item[{Method\+Node}]{method\+Node}{, }\item[{Set$<$ Abstract\+Insn\+Node $>$}]{backward\+Branches}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis_a49a63b5f7520b73065346f91bffdd54a}\index{ppt4j.analysis.bytecode.LoopAnalysis@{ppt4j.analysis.bytecode.LoopAnalysis}!analyze@{analyze}}
+\index{analyze@{analyze}!ppt4j.analysis.bytecode.LoopAnalysis@{ppt4j.analysis.bytecode.LoopAnalysis}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis_a49a63b5f7520b73065346f91bffdd54a} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1bytecode_1_1_loop_analysis}{Loop\+Analysis}} ppt4j.\+analysis.\+bytecode.\+Loop\+Analysis.\+analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method analyzes the control flow of the given method by using a \doxylink{classppt4j_1_1analysis_1_1bytecode_1_1_basic_block_control_flow_analyzer}{Basic\+Block\+Control\+Flow\+Analyzer}. It iterates through the instructions of the method, identifies jump instructions, and checks for backward branches. If a backward branch is found, it adds the jump instruction to the backward\+Branches list.
+
+\begin{DoxyReturn}{Returns}
+The current instance of the class. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceppt4j_1_1analysis_1_1_abstract_analysis_ab508945c1ab92aacc8e277cd3f463477}{ppt4j.\+analysis.\+Abstract\+Analysis}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/bytecode/\mbox{\hyperlink{_loop_analysis_8java}{Loop\+Analysis.\+java}}\end{DoxyCompactItemize}

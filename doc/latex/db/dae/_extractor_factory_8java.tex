@@ -1,0 +1,37 @@
+\doxysection{framework/src/main/java/ppt4j/factory/\+Extractor\+Factory.java File Reference}
+\hypertarget{_extractor_factory_8java}{}\label{_extractor_factory_8java}\index{framework/src/main/java/ppt4j/factory/ExtractorFactory.java@{framework/src/main/java/ppt4j/factory/ExtractorFactory.java}}
+{\ttfamily import ppt4j.\+analysis.\+patch.\+Cross\+Matcher;}\newline
+{\ttfamily import ppt4j.\+database.\+Database\+Type;}\newline
+{\ttfamily import ppt4j.\+database.\+Vulnerability;}\newline
+{\ttfamily import ppt4j.\+feature.\+bytecode.\+Bytecode\+Extractor;}\newline
+{\ttfamily import ppt4j.\+feature.\+java.\+Java\+Extractor;}\newline
+{\ttfamily import ppt4j.\+util.\+File\+Utils;}\newline
+{\ttfamily import ppt4j.\+util.\+Resource\+Utils;}\newline
+{\ttfamily import ppt4j.\+util.\+String\+Utils;}\newline
+{\ttfamily import ppt4j.\+util.\+VMUtils;}\newline
+{\ttfamily import lombok.\+Getter;}\newline
+{\ttfamily import lombok.\+Setter;}\newline
+{\ttfamily import lombok.\+extern.\+log4j.\+Log4j;}\newline
+{\ttfamily import spoon.\+Launcher;}\newline
+{\ttfamily import spoon.\+reflect.\+declaration.\+Ct\+Class;}\newline
+{\ttfamily import spoon.\+reflect.\+declaration.\+Ct\+Import;}\newline
+{\ttfamily import spoon.\+reflect.\+reference.\+Ct\+Type\+Reference;}\newline
+{\ttfamily import spoon.\+reflect.\+visitor.\+Import\+Scanner\+Impl;}\newline
+{\ttfamily import spoon.\+support.\+compiler.\+jdt.\+Compilation\+Unit\+Filter;}\newline
+{\ttfamily import java.\+io.\+File;}\newline
+{\ttfamily import java.\+io.\+IOException;}\newline
+{\ttfamily import java.\+io.\+Input\+Stream;}\newline
+{\ttfamily import java.\+nio.\+file.\+Path;}\newline
+{\ttfamily import java.\+util.\texorpdfstring{$\ast$}{*};}\newline
+{\ttfamily import java.\+util.\+jar.\+Jar\+Entry;}\newline
+{\ttfamily import java.\+util.\+jar.\+Jar\+File;}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{ppt4j.\+factory.\+Extractor\+Factory}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Packages}
+\begin{DoxyCompactItemize}
+\item 
+package \mbox{\hyperlink{namespaceppt4j_1_1factory}{ppt4j.\+factory}}
+\end{DoxyCompactItemize}

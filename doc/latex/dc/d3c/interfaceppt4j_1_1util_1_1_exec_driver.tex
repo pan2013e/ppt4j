@@ -1,0 +1,109 @@
+\doxysection{ppt4j.\+util.\+Exec\+Driver Interface Reference}
+\hypertarget{interfaceppt4j_1_1util_1_1_exec_driver}{}\label{interfaceppt4j_1_1util_1_1_exec_driver}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_a7b4d98031e0a97046a411d2b78363c9c}{get\+Cmdline}} ()
+\item 
+void \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_ac136355aad31c57cf56bba425fe68dea}{dispatch}} (final String cmd)
+\item 
+int \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_a32a4f2ca9bf0c9cc95773da5d18973ab}{join}} ()
+\item 
+int \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_ad9f1567e8e77205b9064581429384f77}{execute}} (final String cmd)
+\item 
+int \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_ae5367c41fb152b7c63ade4215e37329f}{exit\+Value}} ()
+\item 
+void \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_adefb3fffce73770fdc5d5b9fc94146cd}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver}{Exec\+Driver}} \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver_af93cae3a4fb403120936f0d2e1383174}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_ac136355aad31c57cf56bba425fe68dea}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_ac136355aad31c57cf56bba425fe68dea} 
+void ppt4j.\+util.\+Exec\+Driver.\+dispatch (\begin{DoxyParamCaption}\item[{final String}]{cmd}{}\end{DoxyParamCaption})}
+
+Dispatches the given command to the appropriate handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & the command to be dispatched \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_ad9f1567e8e77205b9064581429384f77}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!execute@{execute}}
+\index{execute@{execute}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_ad9f1567e8e77205b9064581429384f77} 
+int ppt4j.\+util.\+Exec\+Driver.\+execute (\begin{DoxyParamCaption}\item[{final String}]{cmd}{}\end{DoxyParamCaption})}
+
+Executes the given command and returns the exit code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & the command to be executed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the exit code of the command 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_ae5367c41fb152b7c63ade4215e37329f}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!exitValue@{exitValue}}
+\index{exitValue@{exitValue}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{exitValue()}{exitValue()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_ae5367c41fb152b7c63ade4215e37329f} 
+int ppt4j.\+util.\+Exec\+Driver.\+exit\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the exit value of the subprocess. The exit value is typically a numeric value representing the result of the subprocess execution. A non-\/zero exit value usually indicates an error occurred during the process execution.
+
+\begin{DoxyReturn}{Returns}
+the exit value of the subprocess 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_a7b4d98031e0a97046a411d2b78363c9c}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!getCmdline@{getCmdline}}
+\index{getCmdline@{getCmdline}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{getCmdline()}{getCmdline()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_a7b4d98031e0a97046a411d2b78363c9c} 
+String ppt4j.\+util.\+Exec\+Driver.\+get\+Cmdline (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method returns the command line arguments passed to the program.
+
+\begin{DoxyReturn}{Returns}
+a String representing the command line arguments 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_af93cae3a4fb403120936f0d2e1383174}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_af93cae3a4fb403120936f0d2e1383174} 
+static \mbox{\hyperlink{interfaceppt4j_1_1util_1_1_exec_driver}{Exec\+Driver}} ppt4j.\+util.\+Exec\+Driver.\+get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an instance of \doxylink{interfaceppt4j_1_1util_1_1_exec_driver}{Exec\+Driver} based on the current operating system. If the operating system is Linux, mac\+OS, or Unix-\/like, it returns an instance of Unix\+Exec\+Driver. Otherwise, it throws an Unsupported\+Operation\+Exception with the message "{}\+Unsupported OS\+: \mbox{[}\+OS name\mbox{]}"{}.
+
+\begin{DoxyReturn}{Returns}
+an instance of \doxylink{interfaceppt4j_1_1util_1_1_exec_driver}{Exec\+Driver} based on the current operating system 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_a32a4f2ca9bf0c9cc95773da5d18973ab}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!join@{join}}
+\index{join@{join}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_a32a4f2ca9bf0c9cc95773da5d18973ab} 
+int ppt4j.\+util.\+Exec\+Driver.\+join (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Combines the elements of a collection into a single integer value.
+
+\begin{DoxyReturn}{Returns}
+the result of joining the elements of the collection 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1util_1_1_exec_driver_adefb3fffce73770fdc5d5b9fc94146cd}\index{ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}!reset@{reset}}
+\index{reset@{reset}!ppt4j.util.ExecDriver@{ppt4j.util.ExecDriver}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1util_1_1_exec_driver_adefb3fffce73770fdc5d5b9fc94146cd} 
+void ppt4j.\+util.\+Exec\+Driver.\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Resets the state of the object to its initial state. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/util/\mbox{\hyperlink{_exec_driver_8java}{Exec\+Driver.\+java}}\end{DoxyCompactItemize}

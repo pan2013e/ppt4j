@@ -1,0 +1,101 @@
+\doxysection{ppt4j.\+feature.\+Extractor Interface Reference}
+\hypertarget{interfaceppt4j_1_1feature_1_1_extractor}{}\label{interfaceppt4j_1_1feature_1_1_extractor}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+Inheritance diagram for ppt4j.\+feature.\+Extractor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{da/dcf/interfaceppt4j_1_1feature_1_1_extractor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor_a6fdba7038fd02ab41f243fd14d96ad1a}{parse}} ()
+\item 
+default void \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor_a81e1b7ea7feae35bd85388936606a33c}{print}} ()
+\item 
+default void \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor_ad155ee39b5da5586006d66d2bf7a9f79}{print}} (int line)
+\item 
+Map$<$ Integer, \mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} $>$ \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor_a08913ef8dc6736aecd5324ab8e15fae7}{get\+Features\+Map}} ()
+\item 
+String \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor_a0221c8e28f0c3678b8bc07b353cd8054}{get\+Class\+Name}} ()
+\item 
+Features.\+Source\+Type \mbox{\hyperlink{interfaceppt4j_1_1feature_1_1_extractor_a5267d09faa07f44805391386886376b0}{get\+Source\+Type}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_extractor_a0221c8e28f0c3678b8bc07b353cd8054}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_extractor_a0221c8e28f0c3678b8bc07b353cd8054} 
+String ppt4j.\+feature.\+Extractor.\+get\+Class\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method returns the name of the class to which the object belongs.
+
+\begin{DoxyReturn}{Returns}
+the name of the class 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_extractor_a08913ef8dc6736aecd5324ab8e15fae7}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}!getFeaturesMap@{getFeaturesMap}}
+\index{getFeaturesMap@{getFeaturesMap}!ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+\doxysubsubsection{\texorpdfstring{getFeaturesMap()}{getFeaturesMap()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_extractor_a08913ef8dc6736aecd5324ab8e15fae7} 
+Map$<$ Integer, \mbox{\hyperlink{classppt4j_1_1feature_1_1_features}{Features}} $>$ ppt4j.\+feature.\+Extractor.\+get\+Features\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a map containing integer keys and \doxylink{classppt4j_1_1feature_1_1_features}{Features} values.
+
+\begin{DoxyReturn}{Returns}
+a map with integer keys corresponding to \doxylink{classppt4j_1_1feature_1_1_features}{Features} objects 
+\end{DoxyReturn}
+\Hypertarget{interfaceppt4j_1_1feature_1_1_extractor_a5267d09faa07f44805391386886376b0}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}!getSourceType@{getSourceType}}
+\index{getSourceType@{getSourceType}!ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+\doxysubsubsection{\texorpdfstring{getSourceType()}{getSourceType()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_extractor_a5267d09faa07f44805391386886376b0} 
+Features.\+Source\+Type ppt4j.\+feature.\+Extractor.\+get\+Source\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method retrieves the type of source for a particular feature.
+
+\begin{DoxyReturn}{Returns}
+the source type of the feature 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor_ab662041ac527ffbe1e8b7836f6132d69}{ppt4j.\+feature.\+bytecode.\+Bytecode\+Extractor}}, and \mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor_aca2d550fc9b0585f3c697a32c1d7d4c3}{ppt4j.\+feature.\+java.\+Java\+Extractor}}.
+
+\Hypertarget{interfaceppt4j_1_1feature_1_1_extractor_a6fdba7038fd02ab41f243fd14d96ad1a}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}!parse@{parse}}
+\index{parse@{parse}!ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_extractor_a6fdba7038fd02ab41f243fd14d96ad1a} 
+void ppt4j.\+feature.\+Extractor.\+parse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor_ab6c4192e9b88ea8c291acad8bac915f5}{ppt4j.\+feature.\+bytecode.\+Bytecode\+Extractor}}, and \mbox{\hyperlink{classppt4j_1_1feature_1_1java_1_1_java_extractor_a710c87455ff6c3b54927a05bd06c9441}{ppt4j.\+feature.\+java.\+Java\+Extractor}}.
+
+\Hypertarget{interfaceppt4j_1_1feature_1_1_extractor_a81e1b7ea7feae35bd85388936606a33c}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}!print@{print}}
+\index{print@{print}!ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_extractor_a81e1b7ea7feae35bd85388936606a33c} 
+default void ppt4j.\+feature.\+Extractor.\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method prints out all the values in the features map. 
+
+Implemented in \mbox{\hyperlink{classppt4j_1_1feature_1_1bytecode_1_1_bytecode_extractor_a3a4f46dc826659589ae45fbb095b14f4}{ppt4j.\+feature.\+bytecode.\+Bytecode\+Extractor}}.
+
+\Hypertarget{interfaceppt4j_1_1feature_1_1_extractor_ad155ee39b5da5586006d66d2bf7a9f79}\index{ppt4j.feature.Extractor@{ppt4j.feature.Extractor}!print@{print}}
+\index{print@{print}!ppt4j.feature.Extractor@{ppt4j.feature.Extractor}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{interfaceppt4j_1_1feature_1_1_extractor_ad155ee39b5da5586006d66d2bf7a9f79} 
+default void ppt4j.\+feature.\+Extractor.\+print (\begin{DoxyParamCaption}\item[{int}]{line}{}\end{DoxyParamCaption})}
+
+Prints the features associated with the specified line number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the line number to print features for \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/feature/\mbox{\hyperlink{_extractor_8java}{Extractor.\+java}}\end{DoxyCompactItemize}

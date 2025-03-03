@@ -1,0 +1,132 @@
+\chapter{PPT4J}
+\hypertarget{index}{}\label{index}\index{PPT4J@{PPT4J}}
+\label{index_md__r_e_a_d_m_e}%
+\Hypertarget{index_md__r_e_a_d_m_e}%
+
+
+\href{https://doi.org/10.5281/zenodo.10397354}{\texttt{ }} \href{https://hub.docker.com/r/zhiyuanpan/ppt4j}{\texttt{ }}
+
+This is the documentation page for the replication package of the ICSE 2024 paper {\itshape "{}\+PPT4\+J\+: Patch Presence Test for Java Binaries"{}}.
+
+{\bfseries{Note\+:}} For more details on the paper, please refer to \href{https://dl.acm.org/doi/abs/10.1145/3597503.3639231}{\texttt{ https\+://dl.\+acm.\+org/doi/abs/10.\+1145/3597503.\+3639231}}.
+
+{\bfseries{Note\+:}} This website is produced using {\bfseries{AI-\/generated}} code comments and docstrings.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Project structure}{Project structure}}\label{index_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.}
+\DoxyCodeLine{├──\ Dockerfile}
+\DoxyCodeLine{├──\ README.md}
+\DoxyCodeLine{├──\ all.iml}
+\DoxyCodeLine{├──\ download.sh}
+\DoxyCodeLine{├──\ framework}
+\DoxyCodeLine{├──\ lib}
+\DoxyCodeLine{├──\ misc}
+\DoxyCodeLine{├──\ pom.xml}
+\DoxyCodeLine{├──\ replicate\_rq1.py}
+\DoxyCodeLine{├──\ scripts}
+\DoxyCodeLine{└──\ urls.txt}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item The {\ttfamily framework} folder contains the code of PPT4J
+\item The {\ttfamily misc} folder contains an example of using PPT4J
+\begin{DoxyItemize}
+\item Please checkout {\ttfamily \doxylink{_demo_8java}{misc/src/main/java/ppt4j/\+Demo.\+java}} for detailed usage.
+\end{DoxyItemize}
+\item The {\ttfamily scripts} folder contains utility scripts, written in Python
+\item The {\ttfamily lib} folder contains necessary jars
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Requirements}{Requirements}}\label{index_autotoc_md3}
+Note\+: We provide Docker images for replication. If you use Docker, you can just jump to the section "{}\+Using docker"{}.\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{System requirements}{System requirements}}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item This project is a prototype implementation and only supports UNIX-\/like operating systems.
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Software requirements}{Software requirements}}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item {\bfseries{JDK, Maven, Python}}
+\item The versions of software we use\+:
+\begin{DoxyItemize}
+\item JDK 17.\+0.\+2 (Java SE 17.\+0.\+2, Oracle Hot\+Spot 64-\/Bit Server VM, build 17.\+0.\+2+8-\/LTS-\/86)
+\item Apache Maven 3.\+9.\+1
+\item Python 3.\+9.\+10
+\end{DoxyItemize}
+\item It should be fine if you use other recent versions of Maven and Python.
+\item We strongly recommend that you use the same Oracle JDK 17.\+0.\+2 for replication. Run {\ttfamily export JAVA\+\_\+\+HOME=...} command to make sure that maven uses the expected version of JDK.
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{Setting up the environment}{Setting up the environment}}\label{index_autotoc_md6}
+\hypertarget{index_autotoc_md7}{}\doxysubsection{\texorpdfstring{On host machine}{On host machine}}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item \href{https://doi.org/10.5281/zenodo.10397354}{\texttt{ Download the dataset}} and extract the items to your preferred location. Then set
+\begin{DoxyItemize}
+\item {\ttfamily ppt4j.\+database.\+root} field in {\ttfamily framework/src/main/resources/ppt4j.\+properties} to that location. Or you can just extract to your home directory to make the property file unaltered.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysubsection{\texorpdfstring{Using Docker}{Using Docker}}\label{index_autotoc_md8}
+
+\begin{DoxyItemize}
+\item We provide a \href{https://hub.docker.com/r/zhiyuanpan/ppt4j}{\texttt{ Docker image}} as an alternative. To start a container, the host system and architecture should be {\ttfamily Linux, x86\+\_\+64(amd64)}.
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Host\ OS}
+\DoxyCodeLine{\$\ docker\ pull\ zhiyuanpan/ppt4j}
+\DoxyCodeLine{\$\ \#\ alternative:\ docker\ pull\ zhiyuanpan/ppt4j:minimal-\/latest}
+\DoxyCodeLine{\$\ docker\ run\ -\/-\/rm\ -\/it\ zhiyuanpan/ppt4j}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item The docker images on Docker Hub have two tags\+: {\ttfamily minimal}(\texorpdfstring{$\sim$}{\string~}250M download size, \texorpdfstring{$\sim$}{\string~}500M final usage) and {\ttfamily complete}(\texorpdfstring{$\sim$}{\string~}13G download size, \texorpdfstring{$\sim$}{\string~}22G final usage).
+\begin{DoxyItemize}
+\item The {\ttfamily complete} one provides an out-\/of-\/the-\/box experience (with dataset). Commands described in the next section can be executed without any further configuration.
+\item The {\ttfamily minimal} one provides a minimal running environment that satisfies software requirements (without dataset). To test the dataset in {\ttfamily minimal} containers, please first run {\ttfamily bash download.\+sh} in the {\bfseries{home directory}}, and the script will start the downloading process.
+\end{DoxyItemize}
+\item To test other Java binaries, you can mount custom directories in the {\ttfamily docker run} command.
+\end{DoxyItemize}
+
+For detailed script/executable usage, please refer to the documentation below.\hypertarget{index_autotoc_md9}{}\doxysection{\texorpdfstring{Run PPT4J}{Run PPT4J}}\label{index_autotoc_md9}
+For a quick start, you can run {\ttfamily python replicate\+\_\+rq1.\+py} to get the results of RQ1 in the paper.
+
+You can also use the Python scripts inside the {\ttfamily scripts} folder for\+: {\bfseries{project building}} and {\bfseries{testing}}.
+
+
+\begin{DoxyItemize}
+\item In the {\bfseries{project root}} (where {\ttfamily \doxylink{_r_e_a_d_m_e_8md}{README.\+md}} and {\ttfamily all.\+iml} are located), run {\ttfamily python -\/m scripts.\texorpdfstring{$<$}{<}name\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}args\texorpdfstring{$>$}{>}}.
+\begin{DoxyItemize}
+\item Available {\ttfamily \texorpdfstring{$<$}{<}name\texorpdfstring{$>$}{>}}\+: {\ttfamily build, test}
+\item {\ttfamily scripts.\+build}\+: wrapper of maven commands; no arg; build the {\ttfamily Java} projects
+\item {\ttfamily scripts.\+test}\+: perform tests on the dataset. Please leave {\ttfamily \texorpdfstring{$<$}{<}args\texorpdfstring{$>$}{>}} empty for detailed usage of this subcommand.
+\end{DoxyItemize}
+\item Example 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ python\ -\/m\ scripts.build}
+\DoxyCodeLine{\$\ python\ -\/m\ scripts.test\ postpatch\ 1}
+\DoxyCodeLine{}
+\DoxyCodeLine{[test.py\ \ \ \ \ \ \ \ \ \ \ ]\ \ INFO\ -\/\ Running\ test\ 1\ postpatch}
+\DoxyCodeLine{[.a.p.PatchAnalyzer]\ \ INFO\ -\/\ Ground\ truth\ binary\ type\ in\ dataset:\ postpatch}
+\DoxyCodeLine{[.a.p.PatchAnalyzer]\ \ INFO\ -\/\ Analyzing\ patch\ for\ fastjson,\ CVE\ ID:\ CVE-\/2017-\/18349,\ Database\ ID:\ 1}
+\DoxyCodeLine{[.a.p.PatchAnalyzer]\ \ INFO\ -\/\ Result:\ 1.0}
+\DoxyCodeLine{[p.u.AspectUtils\ \ \ ]\ \ INFO\ -\/\ Result:\ patch\ is\ present}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ python\ -\/m\ scripts.test\ all}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md10}{}\doxysection{\texorpdfstring{Misc}{Misc}}\label{index_autotoc_md10}
+
+\begin{DoxyItemize}
+\item The compiled PPT4J only works as separate bytecode files in {\ttfamily framework/target/classes}. Packing them into a jar and use the jar will lead to unexpected behaviours, due to our implementation and the classpath mechanism in newer Java versions. 
+\end{DoxyItemize}

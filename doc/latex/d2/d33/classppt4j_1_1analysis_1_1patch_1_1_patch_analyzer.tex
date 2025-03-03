@@ -1,0 +1,109 @@
+\doxysection{ppt4j.\+analysis.\+patch.\+Patch\+Analyzer Class Reference}
+\hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{}\label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_ad1e93b4ffd1f2ca97a156243497c4d39}{Patch\+Analyzer}} (\mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} cve, \mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}} factory)  throws IOException 
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a375fa97badcea0c16770f1afdd5c41d1}{Patch\+Analyzer}} (\mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}} cve, \mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}} type)  throws IOException 
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer}} \mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_aaa22a054a676f1df08f326796ebc187a}{filter\+If\+Match}} (String... patterns)
+\item 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer}} \mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_ae258a84348794f5aa18972c70fd0ab80}{filter\+If\+Not\+Match}} (String... patterns)
+\item 
+boolean \mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a5053b7316d889019d4ea6ac6287344a1}{analyze}} ()  throws IOException 
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a2fd54a4b1921858ebbe4bbc28a03e978}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws IOException 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_ad1e93b4ffd1f2ca97a156243497c4d39}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}!PatchAnalyzer@{PatchAnalyzer}}
+\index{PatchAnalyzer@{PatchAnalyzer}!ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection{\texorpdfstring{PatchAnalyzer()}{PatchAnalyzer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_ad1e93b4ffd1f2ca97a156243497c4d39} 
+ppt4j.\+analysis.\+patch.\+Patch\+Analyzer.\+Patch\+Analyzer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}}}]{cve}{, }\item[{\mbox{\hyperlink{classppt4j_1_1factory_1_1_extractor_factory}{Extractor\+Factory}}}]{factory}{}\end{DoxyParamCaption}) throws IOException}
+
+\Hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a375fa97badcea0c16770f1afdd5c41d1}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}!PatchAnalyzer@{PatchAnalyzer}}
+\index{PatchAnalyzer@{PatchAnalyzer}!ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection{\texorpdfstring{PatchAnalyzer()}{PatchAnalyzer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a375fa97badcea0c16770f1afdd5c41d1} 
+ppt4j.\+analysis.\+patch.\+Patch\+Analyzer.\+Patch\+Analyzer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceppt4j_1_1database_1_1_vulnerability}{Vulnerability}}}]{cve}{, }\item[{\mbox{\hyperlink{enumppt4j_1_1database_1_1_database_type}{Database\+Type}}}]{type}{}\end{DoxyParamCaption}) throws IOException}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a5053b7316d889019d4ea6ac6287344a1}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}!analyze@{analyze}}
+\index{analyze@{analyze}!ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a5053b7316d889019d4ea6ac6287344a1} 
+boolean ppt4j.\+analysis.\+patch.\+Patch\+Analyzer.\+analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws IOException}
+
+Analyzes the patch for a specific CVE (Common Vulnerabilities and Exposures) entry. It processes the differences between the patched files and the original files, identifying pure additions, pure deletions, and modifications. It calculates a similarity score between the additions and deletions, and determines if the patch is present based on a threshold.
+
+\begin{DoxyReturn}{Returns}
+true if the patch is present, false otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if an I/O error occurs during analysis \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_aaa22a054a676f1df08f326796ebc187a}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}!filterIfMatch@{filterIfMatch}}
+\index{filterIfMatch@{filterIfMatch}!ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection{\texorpdfstring{filterIfMatch()}{filterIfMatch()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_aaa22a054a676f1df08f326796ebc187a} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer}} ppt4j.\+analysis.\+patch.\+Patch\+Analyzer.\+filter\+If\+Match (\begin{DoxyParamCaption}\item[{String...}]{patterns}{}\end{DoxyParamCaption})}
+
+Adds the given patterns to the list of filters to be applied during matching analysis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em patterns} & the patterns to add to the filter list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer} object to allow method chaining 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_ae258a84348794f5aa18972c70fd0ab80}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}!filterIfNotMatch@{filterIfNotMatch}}
+\index{filterIfNotMatch@{filterIfNotMatch}!ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection{\texorpdfstring{filterIfNotMatch()}{filterIfNotMatch()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_ae258a84348794f5aa18972c70fd0ab80} 
+\mbox{\hyperlink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer}} ppt4j.\+analysis.\+patch.\+Patch\+Analyzer.\+filter\+If\+Not\+Match (\begin{DoxyParamCaption}\item[{String...}]{patterns}{}\end{DoxyParamCaption})}
+
+Adds the specified patterns to the list of patterns to filter if they do not match.
+
+
+\begin{DoxyParams}{Parameters}
+{\em patterns} & the patterns to be added to the filter\+Not\+Match list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxylink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer} object with the updated filter\+Not\+Match list 
+\end{DoxyReturn}
+\Hypertarget{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a2fd54a4b1921858ebbe4bbc28a03e978}\index{ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}!main@{main}}
+\index{main@{main}!ppt4j.analysis.patch.PatchAnalyzer@{ppt4j.analysis.patch.PatchAnalyzer}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer_a2fd54a4b1921858ebbe4bbc28a03e978} 
+static void ppt4j.\+analysis.\+patch.\+Patch\+Analyzer.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+This method is the entry point of the \doxylink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer} program. It takes in two command line arguments\+: dataset id and database type (PREPATCH or POSTPATCH). It then creates a new \doxylink{classppt4j_1_1analysis_1_1patch_1_1_patch_analyzer}{Patch\+Analyzer} object and calls the analyze method to perform analysis on the specified dataset with the given database type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The command line arguments containing dataset id and database type \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/src/main/java/ppt4j/analysis/patch/\mbox{\hyperlink{_patch_analyzer_8java}{Patch\+Analyzer.\+java}}\end{DoxyCompactItemize}
