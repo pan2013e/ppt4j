@@ -1,0 +1,13 @@
+https://zenodo.org/records/10397354/files/MD5.txt
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part00
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part01
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part02
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part03
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part04
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part05
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part06
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part07
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part08
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part09
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part10
+https://zenodo.org/records/10397354/files/ppt4j_data.tar.xz.part11

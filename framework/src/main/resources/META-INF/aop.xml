@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aspectj [
+        <!ELEMENT aspectj (
+        weaver?,
+        aspects?
+        )>
+        <!ELEMENT weaver (
+        (include | exclude | dump)*
+        )>
+        <!ATTLIST weaver
+        options CDATA #IMPLIED
+        >
+        <!ELEMENT include EMPTY>
+        <!ATTLIST include
+        within CDATA #REQUIRED
+        >
+        <!ELEMENT exclude EMPTY>
+        <!ATTLIST exclude
+        within CDATA #REQUIRED
+        >
+        <!ELEMENT dump EMPTY>
+        <!ATTLIST dump
+        within CDATA #REQUIRED
+        >
+        <!ELEMENT aspects (
+        (aspect | exclude | include | concrete-aspect)*
+        )>
+        <!ELEMENT aspect EMPTY>
+        <!ATTLIST aspect
+        name CDATA #REQUIRED
+        >
+        <!ELEMENT concrete-aspect (
+        pointcut+
+        )>
+        <!ATTLIST concrete-aspect
+        name CDATA #REQUIRED
+        extends CDATA #REQUIRED
+        precedence CDATA #IMPLIED
+        >
+        <!ELEMENT pointcut EMPTY>
+        <!ATTLIST pointcut
+        name CDATA #REQUIRED
+        expression CDATA #REQUIRED
+        >
+        ]>
+<aspectj>
+    <weaver options="-warn:none -Xlint:ignore"/>
+    <aspects>
+        <aspect name="ppt4j.util.AspectUtils"/>
+        <include within="ppt4j..*"/>
+    </aspects>
+</aspectj>
